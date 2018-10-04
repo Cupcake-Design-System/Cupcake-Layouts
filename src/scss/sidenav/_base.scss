@@ -14,17 +14,17 @@
   }
 }
 
-// @include media-breakpoint-down(md) {
-//   .c-sidenav {
-//     width: 0;
-//     transition: all $layout-transition;
-//   }
+@media (max-width: 992px) {
+  .c-sidenav {
+    width: 0;
+    transition: all $layout-transition;
+  }
 
-//   .c-sidenav ~ .#{$main-container-namespace} {
-//     margin-left: 0;
-//     transition: all $layout-transition;
-//   }
-// }
+  .c-sidenav ~ .#{$main-container-namespace} {
+    margin-left: 0;
+    transition: all $layout-transition;
+  }
+}
 
 
 .c-sidenav-divider {

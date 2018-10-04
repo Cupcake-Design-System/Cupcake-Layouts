@@ -23,21 +23,21 @@
   }
 }
 
-// @include media-breakpoint-down(md) {
-//   .c-sidenav-folded .c-sidenav {
-//     width: $sidebar-width;
-//   }
+@media (max-width: 992px) {
+  .c-sidenav-folded .c-sidenav {
+    width: $sidebar-width;
+  }
 
-//   .c-sidenav ~ .#{$main-container-namespace} {
-//     margin-left: 0;
-//   }
+  .c-sidenav ~ .#{$main-container-namespace} {
+    margin-left: 0;
+  }
 
-//   .c-sidenav-folded {
-//     .c-sidenav ~ .#{$main-container-namespace} {
-//       margin-left: 0;
-//     }
-//   }
-// }
+  .c-sidenav-folded {
+    .c-sidenav ~ .#{$main-container-namespace} {
+      margin-left: 0;
+    }
+  }
+}
 
 .c-sidenav-hidden {
   .c-sidenav ~ .#{$main-container-namespace} {
