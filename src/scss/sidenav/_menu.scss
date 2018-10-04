@@ -1,0 +1,76 @@
+.c-sidenav-menu {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.c-sidenav-menu-item {
+  &:hover > .c-sidenav-menu-link {
+    background-color: $menu-item-bg-hover;
+    color: $menu-item-color-hover;
+
+    .c-sidenav-menu-icon {
+      color: $menu-item-color-hover;
+    }
+  }
+
+  &-active > .c-sidenav-menu-link {
+    color: $menu-link-active;
+    background-color: $menu-item-active-bg-color;
+
+    .c-sidenav-menu-icon {
+      color: $menu-link-active;
+    }
+  }
+}
+
+.c-sidenav-menu-link {
+  @include link;
+
+  &:hover {
+    color: $menu-link-hover;
+  }
+
+  .c-sidenav-menu-icon:hover {
+    color: $menu-link-hover;
+  }
+}
+
+.c-sidenav-menu-icon {
+  @include icon;
+
+  &:hover {
+    color: $menu-link-hover;
+  }
+}
+
+.c-sidenav-menu-arrow {
+  @include menu-arrow();
+}
+
+.c-sidenav-menu-submenu {
+  @include menu-submenu;
+
+  .c-sidenav-menu-link {
+    @include menu-submenu-link;
+  }
+
+  .c-sidenav-menu-item-active > .c-sidenav-menu-link,
+  .c-sidenav-menu-item:hover > .c-sidenav-menu-link {
+    background-color: transparent;
+  }
+}
+
+.c-sidenav-menu-submenu .c-sidenav-menu-submenu .c-sidenav-menu-link {
+  padding-left: $sidebar-spacing-steps * 3;
+}
+
+.c-sidenav-menu-title {
+  @include menu-title;
+}
+
+.c-sidenav-menu-category {
+  @include menu-category;
+}
+

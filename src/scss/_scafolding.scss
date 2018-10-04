@@ -1,0 +1,44 @@
+//==================
+// Main
+//==================
+.#{$main-container-namespace} {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: all $layout-transition;
+}
+
+
+.#{$main-content-namespace} {
+  padding-top: 50px;
+  flex: 1 0 auto;
+  transition: all $layout-transition;
+}
+
+//==================
+// Backdrop
+//==================
+.app-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $backdrop-bg-light;
+
+  &.backdrop-sidebar {
+    z-index: $zindex-backdrop-sidebar;
+  }
+
+  &.backdrop-quickview {
+    background-color: transparent;
+    z-index: $zindex-backdrop-quickview;
+  }
+}
+
+#backdrop-dark,
+#backdrop-light,
+#backdrop-main {
+  display: none;
+}
+

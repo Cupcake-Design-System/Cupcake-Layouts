@@ -1,0 +1,185 @@
+@import "mixins";
+
+.#{$aside-namespace} {
+  @include aside;
+
+  ~ .#{$main-content-namespace} {
+    margin-left: $width-aside;
+  }
+}
+
+// @include media-breakpoint-down(md) {
+//   .#{$aside-namespace} {
+//     left: -$width-aside !important;
+
+//     ~ .#{$main-content-namespace},
+//     .c-sidenav ~ .#{$main-container-namespace} {
+//       margin-left: 0;
+//       margin-right: 0;
+//     }
+//   }
+//   // .c-sidenav-folded .#{$aside-namespace} {
+//   //   left: 0 !important;
+//   // }
+// }
+
+
+// Small aside
+.#{$aside-namespace}-sm {
+  width: $width-aside-sm;
+
+  ~ .#{$main-content-namespace} {
+    margin-left: $width-aside-sm;
+  }
+}
+
+
+// Large aside
+.#{$aside-namespace}-lg {
+  width: $width-aside-lg;
+
+  ~ .#{$main-content-namespace} {
+    margin-left: $width-aside-lg;
+  }
+}
+
+
+// For aside content spacing?
+.#{$aside-namespace}-body {
+  padding: 20px 0;
+  height: 100%;
+}
+
+
+// For right aside
+.#{$aside-namespace}-right {
+  @include aside-right;
+
+  ~ .#{$main-content-namespace} {
+    margin-right: $width-aside;
+    margin-left: 0;
+  }
+
+  &.#{$aside-namespace}-sm {
+    width: $width-aside-sm;
+
+    ~ .#{$main-content-namespace} {
+      margin-right: $width-aside-sm;
+    }
+  }
+
+  &.#{$aside-namespace}-lg {
+    width: $width-aside-lg;
+
+    ~ .#{$main-content-namespace} {
+      margin-right: $width-aside-lg;
+    }
+  }
+
+  &.#{$aside-namespace}-collapse {
+    left: -$width-aside;
+    box-shadow: none;
+
+    ~ .#{$main-content-namespace} {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &.#{$aside-namespace}-sm {
+      left: -$width-aside-sm;
+    }
+
+    &.#{$aside-namespace}-lg {
+      left: -$width-aside-lg;
+    }
+  }
+
+  // @include media-breakpoint-down(md) {
+  //   ~ .#{$main-content-namespace} {
+  //     margin-right: 0;
+  //   }
+  // }
+}
+
+
+// Adding .dual-aside class to body allows left and right aside
+.c-dual-aside {
+  .#{$aside-namespace}-right {
+    ~ .#{$main-content-namespace} {
+      margin-right: $width-aside;
+      margin-left: $width-aside;
+    }
+
+    &.#{$aside-namespace}-sm {
+      width: $width-aside-sm;
+
+      ~ .#{$main-content-namespace} {
+        margin-right: $width-aside-sm;
+        margin-left: $width-aside-sm;
+      }
+    }
+
+    &.#{$aside-namespace}-lg {
+      width: $width-aside-lg;
+
+      ~ .#{$main-content-namespace} {
+        margin-right: $width-aside-lg;
+        margin-left: $width-aside-lg;
+      }
+    }
+
+    &.#{$aside-namespace}-collapse {
+      left: -$width-aside;
+      box-shadow: none;
+
+      ~ .#{$main-content-namespace} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &.#{$aside-namespace}-sm {
+        left: -$width-aside-sm;
+      }
+
+      &.#{$aside-namespace}-lg {
+        left: -$width-aside-lg;
+      }
+    }
+  }
+}
+
+
+// This makes the aside work when the sidenav is folded.
+.c-sidenav-folded {
+  .#{$aside-namespace} {
+    left: $sidebar-collapsed-width;
+  }
+
+  .#{$aside-namespace}-right {
+    right: 0;
+    left: auto;
+  }
+
+  .#{$aside-namespace}-collapse.#{$aside-namespace} {
+    left: -$sidebar-width;
+    box-shadow: none;
+  }
+}
+
+// This makes the aside work when the sidenav is collapsed.
+.#{$aside-namespace}-collapse {
+  left: -$width-aside;
+  box-shadow: none;
+
+  ~ .#{$main-content-namespace} {
+    margin-left: 0;
+  }
+
+  .#{$aside-namespace}-sm {
+    left: -$width-aside-sm;
+  }
+
+  .#{$aside-namespace}-lg {
+    left: -$width-aside-lg;
+  }
+}

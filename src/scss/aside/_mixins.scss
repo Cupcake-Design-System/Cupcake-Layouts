@@ -1,0 +1,27 @@
+
+@mixin aside {
+  background-color: $aside-bg;
+  box-shadow: $aside-box-shadow;
+  border-right: $aside-border-right;
+  position: fixed;
+  left: $sidebar-width; //this is sidebar width
+  top: 0;
+  bottom: 0;
+  width: $width-aside;
+  margin-top: 50px; //this is header height
+  z-index: $zindex-aside;
+  transform: translateZ(0);
+  transition: $layout-transition;
+  backface-visibility: hidden;
+  perspective: 1000;
+  will-change: transform;
+}
+
+
+@mixin aside-right {
+  right: 0;
+  left: auto;
+  box-shadow: $aside-box-shadow-left;
+  border-right: 0;
+  border-left: $aside-border-left;
+}

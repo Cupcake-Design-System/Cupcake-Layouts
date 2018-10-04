@@ -1,0 +1,38 @@
+.c-sidenav {
+  @include sidebar;
+
+  &-body {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1 1 0%;
+  }
+
+  ~ .#{$main-container-namespace} {
+    margin-left: $sidebar-width;
+    transition: all $layout-transition;
+  }
+}
+
+// @include media-breakpoint-down(md) {
+//   .c-sidenav {
+//     width: 0;
+//     transition: all $layout-transition;
+//   }
+
+//   .c-sidenav ~ .#{$main-container-namespace} {
+//     margin-left: 0;
+//     transition: all $layout-transition;
+//   }
+// }
+
+
+.c-sidenav-divider {
+  display: block;
+  border-top: 1px solid $sidebar-divider-color;
+  margin: 1rem 0 .5rem;
+}
+
+.c-sidenav-collapse {
+  @include sidenav-collapse;
+}

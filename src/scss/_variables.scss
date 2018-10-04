@@ -1,0 +1,81 @@
+$main-container-namespace: "main-container" !default;
+$main-content-namespace: "main-content" !default;
+$layout-transition: 0.3s ease !default;
+
+
+// Backdrop Variables
+$zindex-backdrop-topbar: 992 !default;
+$zindex-backdrop-sidebar: 997 !default;
+$zindex-backdrop-quickview: 998 !default;
+$backdrop-bg-light: rgba(255, 255, 255, 0.7);
+$backdrop-bg-dark: rgba(0, 0, 0, 0.5);
+
+
+// Aside Variables
+$aside-namespace   : "c-aside" !default;
+$width-aside-sm    : 200px !default;
+$width-aside-lg    : 300px !default;
+$width-aside       : 250px !default;
+$zindex-aside      : 991 !default;
+$aside-bg          : $color-gray-0 !default;
+$aside-box-shadow  : 1px 1px 5px rgba(0, 0, 0, 0.04) !default;
+$aside-border-right: 1px solid #ebebeb !default;
+$aside-border-left : 1px solid #ebebeb !default;
+$aside-box-shadow-left: -1px 1px 5px rgba(0, 0, 0, 0.04) !default;
+
+
+// Quickview Variables
+$quickview-namespace     : "c-quickview" !default;
+$zindex-quickview        : 999 !default;
+$width-quickview-sm      : 220px !default;
+$width-quickview         : 300px !default;
+$width-quickview-lg      : 400px !default;
+$width-quickview-xl      : 500px !default;
+$quickview-bg            : #ffffff !default;
+$quickview-footer-bg     : #fcfdfe !default;
+$quickview-footer-height : 50px !default;
+$quickview-footer-padding: 0 16px !default;
+$quickview-header-height : 50px !default;
+$quickview-header-padding: 0 20px !default;
+$quickview-header-border : #ebebeb !default;
+$offcanvas-right-shadow:  5px 15px 13px 3px rgba(0, 0, 0, 0.1);
+$offcanvas-left-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !default;
+
+
+// Sidenav Variables
+$sidebar-width             : 250px !default;
+$sidebar-collapsed-width   : 50px !default;
+$sidebar-top               : 50px !default;
+$sidebar-toggle-bg         : $color-gray-0 !default;
+$sidebar-bg                : #ffffff !default;
+$sidebar-bd                : $color-gray-3 !default;
+$sidebar-category-color    : $color-gray-7 !default;
+$sidebar-category-font-size: 12px !default;
+$sidebar-category-padding  : 1rem 16px 0.5rem 18px !default;
+$sidebar-spacing-steps     : 20px !default;
+$sidebar-divider-color     : $color-gray-2 !default;
+$sidebar-collapse-bg       : $color-gray-0 !default;
+$sidebar-collapse-bg-hover : $color-gray-1 !default;
+$sidebar-collapse-color    : $color-gray-6 !default;
+$sidebar-collapse-bd       : $color-gray-2 !default;
+$sidebar-collapse-padding  : 10px 20px !default;
+$sidebar-collapse-font-size: 18px !default;
+$menu-link-color           : $color-gray-7 !default;
+$menu-link-hover           : $color-gray-7 !default;
+$menu-link-active          : $color-primary-8 !default;
+$menu-link-padding         : 16px 12px !default;
+$menu-item-bg-hover        : $color-gray-0 !default;
+$menu-item-color-hover     : $color-primary-8 !default;
+$menu-item-active-bg-color : $color-gray-0 !default;
+$menu-title-font-size      : 14px !default;
+$submenu-bg                : #ffffff !default;
+$submenu-padding-top       : .5rem !default;
+$submenu-padding-bottom    : .5rem !default;
+$submenu-link-height       : 32px !default;
+$submenu-link              : $color-gray-7 !default;
+$submenu-link-font-size    : 13px !default;
+$menu-icon-size            : 18px !default;
+$menu-icon-color           : $color-gray-5 !default;
+$menu-icon-flex-basis      : 26px !default;
+$menu-arrow-size           : 12px !default;
+$menu-arrow-color          : $color-gray-7 !default;
