@@ -1,5 +1,11 @@
-# new demo
+<img alt="cupcake-logo" src="http://funkyimg.com/i/2KN2G.png" width="350">
 
+[![CodeFactor](https://www.codefactor.io/repository/github/cupcake-design-system/cupcake-layouts/badge)](https://www.codefactor.io/repository/github/cupcake-design-system/cupcake-layouts)
+
+
+# Cupcake 2.0 Layouts UNDER DEVELOPMENT
+
+This repository includes everything you need to build, customize, test, and deploy Cupcake.
 
 ## List of packages used
 [autoprefixer](https://github.com/postcss/autoprefixer), [browser-sync](https://github.com/Browsersync/browser-sync), [node-sass](https://github.com/sass/node-sass), [onchange](https://github.com/Qard/onchange), [npm-run-all](https://github.com/mysticatea/npm-run-all), [postcss-cli](https://github.com/code42day/postcss-cli),[uglify-js](https://github.com/mishoo/UglifyJS2).
