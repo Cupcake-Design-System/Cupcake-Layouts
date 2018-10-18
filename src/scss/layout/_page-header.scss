@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Page header
+ *
+ *  Page header components and color options
+ *
+ * ---------------------------------------------------------------------------- */
+
+
+// Page title
+.page-title {
+  padding: $space-md 0;
+  position: relative;
+}
+
+// Page header content
+.page-header-content {
+  position: relative;
+  padding: 0 $space-md;
+}
+
+
+//
+// Page header colors
+//
+
+// Light
+.page-header-light {
+  background-color: $page-header-light-bg;
+}
+
+// Dark
+.page-header-dark {
+  background-color: $page-header-dark-bg;
+  color: $page-header-dark-color;
+}
+
+// Common
+.page-header-light,
+.page-header-dark {
+  border-bottom: 1px solid #dee2e6;
+}
+

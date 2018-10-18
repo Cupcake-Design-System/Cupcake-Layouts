@@ -1,0 +1,72 @@
+
+@mixin header {
+  background-color: $header-bg;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: $header-height;
+  width: 100%;
+  z-index: 10;
+}
+
+@mixin header-item {
+  &-link {
+    color: $header-text-color;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    height: $header-height;
+    padding: 0 24px;
+
+    &:hover {
+      background: $header-bg-hover;
+    }
+  }
+}
+
+.c-header {
+  @include header;
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  &-item {
+    @include header-item;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+
+    .c-header-item {
+      border-right: 1px solid $header-borders;
+    }
+  }
+
+  &-center {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    .c-input-container {
+      width: 100%;
+      margin: 0 1.5rem;
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+
+    .c-header-item {
+      border-left: 1px solid $header-borders;
+    }
+  }
+}
+
+
+.c-header-logo img {
+  width: $header-logo-width;
+}

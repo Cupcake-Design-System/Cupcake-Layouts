@@ -1,0 +1,184 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Main content layout
+ *
+ *  Styles for main structure of content area
+ *
+ * ---------------------------------------------------------------------------- */
+
+// Make sure document has 100% height
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+// Document body
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+// Main container
+.page-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+// Content wrapper
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // overflow: auto;
+}
+
+// Main content container
+.content {
+  padding: 1rem;
+  flex-grow: 1;
+
+  @include clearfix;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 4px 0 rgba(33, 37, 41, .05);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+
+  &-body {
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+}
+
+.main {
+  display: flex;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+
+.c-layout-fixed {
+  .c-sidenav-main {
+    position: fixed !important;
+    width: 256px;
+    top: 48px !important;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    transition: width .1s ease;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+
+  .page-content {
+    margin-left: 256px;
+    margin-top: 48px;
+    transition: margin .1s ease;
+  }
+
+  .navbar-dark {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  @media (max-width: 768px) {
+    .page-content {
+      margin-left: 0;
+    }
+
+    .c-sidenav-main {
+      margin-left: -256px;
+      top: 0;
+    }
+  }
+}
+
+.c-sidenav-folded.c-layout-fixed .page-content {
+  margin-left: 56px;
+}
+
+
+/// for demo
+.c-avatar {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  background: #f1f3f5;
+  border-radius: 50%;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 12px;
+  vertical-align: middle;
+  margin: 0;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, .06);
+}
+
+.c-avatar[data-text]::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-avatar-secondary {
+  background: #f1f3f5;
+  margin-right: 8px;
+}
+
+.c-avatar-secondary {
+  color: #495057;
+}
+
+.c-avatar-sm {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: .8rem;
+}
+
+.display-flex {
+  flex-direction: column !important;
+
+  @media (min-width: 768px) {
+    flex-direction: row !important;
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+}
+
+.text-center { text-align: center !important; }
+
+
+.c-d-flex {
+  display: flex !important;
+}

@@ -1,0 +1,78 @@
+.c-sidenav-user {
+  &-body {
+    background: $img-path center center no-repeat;
+    background-size: cover;
+  }
+
+  &-info {
+    flex: 1 1 auto;
+    padding: $space-md 0;
+    text-align: center;
+  }
+
+  &-info-image {
+    margin-bottom: $space-md;
+    border-radius: 50%;
+  }
+
+  &-info-name {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &-info-location {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &-footer {
+    > a {
+      padding: $space-sm $space-md;
+      display: flex;
+      color: #ffffff;
+      background-color: rgba(black, .3);
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color ease-in-out 0.15s;
+
+      &:hover {
+        background-color: rgba(black, .6);
+      }
+    }
+
+    > a::after {
+      transition: all ease-in-out 0.15s;
+    }
+  }
+
+  .c-sidenav-menu {
+    display: none;
+
+    &.show {
+      display: flex;
+    }
+  }
+}
+
+.c-sidenav-user-dropdown {
+  &::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+    line-height: 1;
+    right: $space-md;
+    transition: transform 0.25s ease-in-out;
+  }
+}
+
+a.c-sidenav-user-dropdown.c-d-flex::after {
+  transform: rotate(180deg);
+}
+
+.c-sidenav-user-hidden .c-sidenav-user {
+  display: none;
+}

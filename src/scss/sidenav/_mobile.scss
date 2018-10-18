@@ -1,0 +1,58 @@
+.c-sidenav-mobile-toggler {
+  display: none;
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border-bottom-color: #000000;
+  height: $header-default-height;
+  padding: $space-sm;
+
+  a {
+    color: #000000;
+    padding: $space-sm;
+    transition: all ease-in-out 0.15s;
+
+    &:hover {
+      color: #e6e6e6;
+      background-color: #000000;
+    }
+  }
+}
+
+.c-sidenav-mobile-main .c-sidenav-main {
+  left: -($sidebar-default-width);
+  position: fixed;
+
+  .c-sidenav-body {
+    left: -($sidebar-default-width);
+    position: fixed;
+  }
+}
+
+.c-sidenav-mobile-secondary .c-sidenav-secondary {
+  left: -($sidebar-default-width);
+  position: fixed;
+
+  .c-sidenav-body {
+    left: -($sidebar-default-width);
+    position: fixed;
+  }
+}
+
+.c-sidenav-mobile-right .c-sidenav-right {
+  display: block;
+  right: 0;
+
+  .c-sidenav-body {
+    right: 0;
+  }
+}
+
+.c-sidenav-mobile-component .c-sidenav-component {
+  display: block;
+}
+
+.c-sidenav-mobile-expand i:last-child:not(:first-child) {
+  display: none;
+}

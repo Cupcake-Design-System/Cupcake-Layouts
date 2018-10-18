@@ -1,0 +1,50 @@
+.c-sidenav-component {
+  display: flex;
+  width: 100%;
+  margin-left: -1px;
+  border: $sidebar-default-border;
+  margin-bottom: $space-md;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: $sidebar-default-width;
+
+    .c-sidenav-body {
+      position: relative;
+      top: 0;
+    }
+
+    // Left alignment
+    &-left {
+      margin-right: $space-md;
+    }
+
+    // Right alignment
+    &-right {
+      margin-left: $space-md;
+    }
+  }
+}
+
+// Content sidebar
+// .c-sidenav-component {
+//   display: block;
+//   width: $sidebar-base-width;
+//   z-index: $sidebar-zindex-component;
+
+//   // Left alignment
+//   &-left {
+//     margin-right: $grid-gutter-width;
+//   }
+
+//   // Right alignment
+//   &-right {
+//     margin-left: $grid-gutter-width;
+//   }
+// }
+
+.c-sidenav-divider {
+  margin: $space-sm 0;
+  height: 1px;
+  background-color: $sidebar-divider-default-color;
+}

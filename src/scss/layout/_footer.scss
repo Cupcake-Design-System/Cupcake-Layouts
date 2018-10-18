@@ -1,0 +1,33 @@
+
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: $footer-color;
+  font-size: $footer-font-size;
+  background-color: $footer-background-color;
+  padding: $footer-padding;
+  z-index: 998;
+  line-height: 1;
+  width: 100%;
+  border-top: 1px solid #dee2e6;
+  height: $footer-height;
+
+  &-link {
+    margin-left: 10px;
+    display: inline-block;
+    background-color: transparent;
+
+    a {
+      color: $footer-color;
+    }
+  }
+
+  @media (max-width: 767px) {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    line-height: 1.5;
+  }
+}

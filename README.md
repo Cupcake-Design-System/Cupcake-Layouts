@@ -1,4 +1,4 @@
-# quickview demo
+# new demo
 
 
 ## List of packages used
@@ -66,11 +66,6 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
   `onchange 'src/**/*.js' -- run-s build:js`
 
   Watches for any .js file in `src` to change, then runs the `build:js` task
-
-### `watch:images`
-  `onchange 'src/images/**/*' -- run-s build:images`
-
-  Watches for any images in `src` to change, then runs the `build:images` task
 
 ### `watch`
   `run-p serve watch:*`

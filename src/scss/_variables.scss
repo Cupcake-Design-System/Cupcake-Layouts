@@ -1,81 +1,79 @@
-$main-container-namespace: "main-container" !default;
-$main-content-namespace: "main-content" !default;
-$layout-transition: 0.3s ease !default;
+
+//
+// Color system
+//
+// Includes grey palette, contextual colors and main theme colors
+
+// Grey shades
+$white                             : #ffffff;
+$black                             : #000000;
+
+$body-bg                           : #f8f9fa;
+$body-color                        : $black;
 
 
-// Backdrop Variables
-$zindex-backdrop-topbar: 992 !default;
-$zindex-backdrop-sidebar: 997 !default;
-$zindex-backdrop-quickview: 998 !default;
-$backdrop-bg-light: rgba(255, 255, 255, 0.7);
-$backdrop-bg-dark: rgba(0, 0, 0, 0.5);
+// Images
+$img-path:                                url('../images/user_bg4.jpg') !default;
 
 
-// Aside Variables
-$aside-namespace   : "c-aside" !default;
-$width-aside-sm    : 200px !default;
-$width-aside-lg    : 300px !default;
-$width-aside       : 250px !default;
-$zindex-aside      : 991 !default;
-$aside-bg          : $color-gray-0 !default;
-$aside-box-shadow  : 1px 1px 5px rgba(0, 0, 0, 0.04) !default;
-$aside-border-right: 1px solid #ebebeb !default;
-$aside-border-left : 1px solid #ebebeb !default;
-$aside-box-shadow-left: -1px 1px 5px rgba(0, 0, 0, 0.04) !default;
+// Transition timers
+$component-transition-timer:              0.15s !default;
+$component-transition-delay:              0.15s !default;
+$transition-base                   : all .15s ease-in-out;
+
+//
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// Font families
+$font-family-base                  : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Font sizes
+$font-size-base                    : 0.8125rem; // Assumes the browser default, typically `16px`
+$line-height-base                  : 1.5385;
+$font-weight-base                  : 400;
+
+// Line heights
+$caret-width:                 .3em !default;
+
+$space-0: 0 !default;
+$space-xxs: 2px !default;
+$space-xs: 4px !default;
+$space-sm: 8px !default;
+$space-md: 16px !default;
+$space-lg: 24px !default;
+$space-xl: 32px !default;
 
 
-// Quickview Variables
-$quickview-namespace     : "c-quickview" !default;
-$zindex-quickview        : 999 !default;
-$width-quickview-sm      : 220px !default;
-$width-quickview         : 300px !default;
-$width-quickview-lg      : 400px !default;
-$width-quickview-xl      : 500px !default;
-$quickview-bg            : #ffffff !default;
-$quickview-footer-bg     : #fcfdfe !default;
-$quickview-footer-height : 50px !default;
-$quickview-footer-padding: 0 16px !default;
-$quickview-header-height : 50px !default;
-$quickview-header-padding: 0 20px !default;
-$quickview-header-border : #ebebeb !default;
-$offcanvas-right-shadow:  5px 15px 13px 3px rgba(0, 0, 0, 0.1);
-$offcanvas-left-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !default;
+$sidebar-default-width: 256px;
+$sidebar-folded-default-width: 56px;
+$sidebar-default-bg-color: #ffffff;
+$sidebar-default-color: #000000;
+$sidebar-default-border: 1px solid #dddddd;
+$sidebar-divider-default-color: #eeeeee;
+$header-default-height: 48px;
+
+$footer-font-size       : 12px !default;
+$footer-color           : #868e96 !default;
+$footer-color-link      : #868e96 !default;
+$footer-background-color: #ffffff !default;
+$footer-padding         : 0 16px !default;
+$footer-height          : 48px !default;
+$footer-trans-color     : black !default;
 
 
-// Sidenav Variables
-$sidebar-width             : 250px !default;
-$sidebar-collapsed-width   : 50px !default;
-$sidebar-top               : 50px !default;
-$sidebar-toggle-bg         : $color-gray-0 !default;
-$sidebar-bg                : #ffffff !default;
-$sidebar-bd                : $color-gray-3 !default;
-$sidebar-category-color    : $color-gray-7 !default;
-$sidebar-category-font-size: 12px !default;
-$sidebar-category-padding  : 1rem 16px 0.5rem 18px !default;
-$sidebar-spacing-steps     : 20px !default;
-$sidebar-divider-color     : $color-gray-2 !default;
-$sidebar-collapse-bg       : $color-gray-0 !default;
-$sidebar-collapse-bg-hover : $color-gray-1 !default;
-$sidebar-collapse-color    : $color-gray-6 !default;
-$sidebar-collapse-bd       : $color-gray-2 !default;
-$sidebar-collapse-padding  : 10px 20px !default;
-$sidebar-collapse-font-size: 18px !default;
-$menu-link-color           : $color-gray-7 !default;
-$menu-link-hover           : $color-gray-7 !default;
-$menu-link-active          : $color-primary-8 !default;
-$menu-link-padding         : 16px 12px !default;
-$menu-item-bg-hover        : $color-gray-0 !default;
-$menu-item-color-hover     : $color-primary-8 !default;
-$menu-item-active-bg-color : $color-gray-0 !default;
-$menu-title-font-size      : 14px !default;
-$submenu-bg                : #ffffff !default;
-$submenu-padding-top       : .5rem !default;
-$submenu-padding-bottom    : .5rem !default;
-$submenu-link-height       : 32px !default;
-$submenu-link              : $color-gray-7 !default;
-$submenu-link-font-size    : 13px !default;
-$menu-icon-size            : 18px !default;
-$menu-icon-color           : $color-gray-5 !default;
-$menu-icon-flex-basis      : 26px !default;
-$menu-arrow-size           : 12px !default;
-$menu-arrow-color          : $color-gray-7 !default;
+$page-header-light-bg:                       #ffffff !default;
+$page-header-dark-bg:                        #273246 !default;
+$page-header-dark-color:                     #ffffff !default;
+
+
+$white                    : #ffffff !default;
+$header-bottom-border     : #fcfcfc !default;
+$header-bg                : #0b3a56 !default;
+$header-bg-hover          : rgba(0, 0, 0, 0.1) !default;
+$header-text-color        : #ffffff !default;
+$header-borders           : rgba(255, 255, 255, 0.1) !default;
+$header-logo-max-width    : 120px !default;
+$header-height            : 48px !default;
+$header-logo-width        :  85px !default;
