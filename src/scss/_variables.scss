@@ -5,11 +5,9 @@
 // Includes grey palette, contextual colors and main theme colors
 
 // Grey shades
-$white                             : #ffffff;
-$black                             : #000000;
 
-$body-bg                           : #f8f9fa;
-$body-color                        : $black;
+$body-bg                           : $color-gray-0;
+$body-color                        : $color-black;
 
 
 // Images
@@ -27,7 +25,7 @@ $transition-base                   : all .15s ease-in-out;
 // Font, line-height, and color for body text, headings, and more.
 
 // Font families
-$font-family-base                  : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base                  : $font-family-sans;
 
 // Font sizes
 $font-size-base                    : 0.8125rem; // Assumes the browser default, typically `16px`
@@ -37,42 +35,34 @@ $font-weight-base                  : 400;
 // Line heights
 $caret-width:                 .3em !default;
 
-$space-0: 0 !default;
-$space-xxs: 2px !default;
-$space-xs: 4px !default;
-$space-sm: 8px !default;
-$space-md: 16px !default;
-$space-lg: 24px !default;
-$space-xl: 32px !default;
-
 
 $sidebar-default-width: 256px;
 $sidebar-folded-default-width: 56px;
-$sidebar-default-bg-color: #ffffff;
-$sidebar-default-color: #000000;
-$sidebar-default-border: 1px solid #dddddd;
-$sidebar-divider-default-color: #eeeeee;
+$sidebar-default-bg-color: $color-white;
+$sidebar-default-color: $color-black;
+$sidebar-default-border: 1px solid $color-gray-4;
+$sidebar-divider-default-color: $color-gray-4;
 $header-default-height: 48px;
 
 $footer-font-size       : 12px !default;
-$footer-color           : #868e96 !default;
-$footer-color-link      : #868e96 !default;
-$footer-background-color: #ffffff !default;
-$footer-padding         : 0 16px !default;
+$footer-color           : $color-gray-6 !default;
+$footer-color-link      : $color-gray-6 !default;
+$footer-background-color: $color-white !default;
+$footer-padding         : 0 $space-md !default;
 $footer-height          : 48px !default;
-$footer-trans-color     : black !default;
+$footer-trans-color     : $color-black !default;
 
 
-$page-header-light-bg:                       #ffffff !default;
+$page-header-light-bg:                       $color-white !default;
 $page-header-dark-bg:                        #273246 !default;
-$page-header-dark-color:                     #ffffff !default;
+$page-header-dark-color:                     $color-white !default;
 
 
-$white                    : #ffffff !default;
+$white                    : $color-white !default;
 $header-bottom-border     : #fcfcfc !default;
 $header-bg                : #0b3a56 !default;
 $header-bg-hover          : rgba(0, 0, 0, 0.1) !default;
-$header-text-color        : #ffffff !default;
+$header-text-color        : $color-white !default;
 $header-borders           : rgba(255, 255, 255, 0.1) !default;
 $header-logo-max-width    : 120px !default;
 $header-height            : 48px !default;

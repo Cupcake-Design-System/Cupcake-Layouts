@@ -20,12 +20,12 @@ $sidebar-dark-user-menu-border-color:    rgba($white, 0.06) !default;
 
 // Dark sidebar navigation styles
 $navigation-dark-color:                     rgba($dark-foreground, 0.9) !default;
-$navigation-dark-hover-bg:                  rgba($black, 0.15) !default;
+$navigation-dark-hover-bg:                  rgba($color-black, 0.15) !default;
 $navigation-dark-hover-color:               $dark-foreground !default;
 $navigation-dark-active-bg:                 #1c7cd6 !default;
 $navigation-dark-active-color:              $white !default;
-$navigation-dark-sub-bg:                    rgba($black, 0.15) !default;
-$navigation-dark-sub-active-bg:             rgba($black, 0.15) !default;
+$navigation-dark-sub-bg:                    rgba($color-black, 0.15) !default;
+$navigation-dark-sub-active-bg:             rgba($color-black, 0.15) !default;
 $navigation-dark-sub-active-color:          $white !default;
 
 
