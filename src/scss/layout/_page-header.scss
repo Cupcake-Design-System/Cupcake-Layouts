@@ -12,6 +12,12 @@
   padding: $space-md 0;
   position: relative;
   margin: 0;
+
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-gray-8;
+  }
 }
 
 // Page header content

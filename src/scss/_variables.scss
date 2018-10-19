@@ -7,13 +7,11 @@
 // Grey shades
 
 $body-bg                           : $color-gray-0;
-$body-color                        : $color-gray-8;
+$body-color                        : $color-gray-6;
 
 
 // Images
-$img-path:                                url('../images/user_bg4.jpg') !default;
-
-// Font families
+$img-path:                                url('../images/bg9.png') !default;
 $font-family-base                  : $font-family-sans;
 
 
@@ -64,8 +62,6 @@ $sidebar-submenu-level4-padding-left: 80px !default;
 // Sidebar End --------------------------------
 // --------------------------------------------
 
-$header-default-height        : 48px;
-
 $footer-font-size       : 12px !default;
 $footer-color           : $color-gray-6 !default;
 $footer-color-link      : $color-gray-6 !default;
@@ -88,31 +84,31 @@ $header-text-color        : $color-white !default;
 $header-borders           : rgba(255, 255, 255, 0.1) !default;
 $header-logo-max-width    : 120px !default;
 $header-height            : 48px !default;
-$header-logo-width        :  85px !default;
+$header-logo-width        : 85px !default;
 
 
 // --------------------------------------------
 // Quickview Start ----------------------------
 // --------------------------------------------
-$quickview-namespace     : "c-quickview" !default;
-$zindex-quickview        : 999 !default;
-$width-quickview-sm      : 220px !default;
-$width-quickview         : 300px !default;
-$width-quickview-lg      : 400px !default;
-$width-quickview-xl      : 500px !default;
-$quickview-bg            : #ffffff !default;
-$quickview-footer-bg     : #fcfdfe !default;
-$quickview-footer-height : 50px !default;
-$quickview-footer-padding: 0 16px !default;
-$quickview-header-height : 50px !default;
-$quickview-header-padding: 0 20px !default;
-$quickview-header-border : #ebebeb !default;
-$offcanvas-right-shadow:  5px 15px 13px 3px rgba(0, 0, 0, 0.1);
-$offcanvas-left-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !default;
-$layout-transition: 0.3s ease !default;
+$quickview-namespace      : "c-quickview" !default;
+$zindex-quickview         : 999 !default;
+$width-quickview-sm       : 220px !default;
+$width-quickview          : 300px !default;
+$width-quickview-lg       : 400px !default;
+$width-quickview-xl       : 500px !default;
+$quickview-bg             : $color-white !default;
+$quickview-footer-bg      : $color-gray-0 !default;
+$quickview-footer-height  : $space-xl + $space-md !default;
+$quickview-footer-padding : 0 $space-md !default;
+$quickview-header-height  : $space-xl + $space-md !default;
+$quickview-header-padding : 0 $space-md !default;
+$quickview-header-border  : $color-gray-1 !default;
+$offcanvas-right-shadow   : 5px 15px 13px 3px rgba(0, 0, 0, 0.1) !default;
+$offcanvas-left-shadow    : 0 0 25px rgba(0, 0, 0, 0.1) !default;
+$layout-transition        : 0.3s ease !default;
 $zindex-backdrop-quickview: 998 !default;
-$backdrop-bg-light: rgba(255, 255, 255, 0.7);
-$backdrop-bg-dark: rgba(0, 0, 0, 0.5);
+$backdrop-bg-light        : rgba(255, 255, 255, 0.7) !default;
+$backdrop-bg-dark         : rgba(0, 0, 0, 0.5) !default;
 // --------------------------------------------
 // Quickview End ------------------------------
 // --------------------------------------------

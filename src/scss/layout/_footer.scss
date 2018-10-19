@@ -11,11 +11,11 @@
   z-index: 998;
   line-height: 1;
   width: 100%;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid $color-gray-4;
   height: $footer-height;
 
   &-link {
-    margin-left: 10px;
+    margin-left: $space-sm;
     display: inline-block;
     background-color: transparent;
 
@@ -27,7 +27,7 @@
   @media (max-width: 767px) {
     text-align: center;
     display: inline-block;
-    padding: 5px;
+    padding: $space-sm;
     line-height: 1.5;
   }
 }

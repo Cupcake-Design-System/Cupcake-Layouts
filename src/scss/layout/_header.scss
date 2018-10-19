@@ -1,9 +1,9 @@
 
 @mixin header {
-  background-color: $header-bg;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
+  background-color: $header-bg;
   height: $header-height;
   width: 100%;
   z-index: 10;
@@ -11,12 +11,12 @@
 
 @mixin header-item {
   &-link {
-    color: $header-text-color;
-    white-space: nowrap;
-    align-items: center;
     display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: $header-text-color;
     height: $header-height;
-    padding: 0 24px;
+    padding: 0 $space-lg;
 
     &:hover {
       background: $header-bg-hover;
