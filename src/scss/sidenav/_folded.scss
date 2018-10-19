@@ -46,26 +46,6 @@
               display: none;
             }
           }
-
-          &:hover > .c-sidenav-menu-link.disabled {
-            > span {
-              display: none !important;
-            }
-
-            + .c-sidenav-menu-submenu-group {
-              display: none !important;
-            }
-          }
-
-          &:focus > .c-sidenav-menu-link.disabled {
-            > span {
-              display: none !important;
-            }
-
-            + .c-sidenav-menu-submenu-group {
-              display: none !important;
-            }
-          }
         }
 
         .c-sidenav-menu-submenu {
@@ -112,9 +92,9 @@
           > i {
             display: block;
             top: 0;
-            padding: 16px;
-            margin-top: 4px;
-            margin-bottom: 4px;
+            padding: $space-md;
+            margin-top: $space-xs;
+            margin-bottom: $space-xs;
           }
 
           > div {
@@ -129,16 +109,16 @@
 
       .c-sidenav-menu-submenu-group {
         .c-sidenav-menu-link {
-          padding-left: 16px;
+          padding-left: $space-md;
         }
 
         .c-sidenav-menu-submenu-group {
           .c-sidenav-menu-link {
-            padding-left: 32px;
+            padding-left: $space-xl;
           }
 
           .c-sidenav-menu-submenu-group .c-sidenav-menu-link {
-            padding-left: 48px;
+            padding-left: ($space-xl + $space-md);
           }
         }
       }

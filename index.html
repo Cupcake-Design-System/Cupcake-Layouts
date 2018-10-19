@@ -9,6 +9,7 @@
   <!-- /global stylesheets -->
   <link href="dist/icons/fontawesome/css/all.css" rel="stylesheet" type="text/css">
   <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+  <link href="dist/css/other.css" rel="stylesheet" type="text/css">
   <!-- /global stylesheets -->
 
 
@@ -18,6 +19,7 @@
 
     <header class="c-header">
       <div class="c-header-left">
+
         <div class="c-header-item">
           <a href="#" class="c-header-item-link c-header-logo">
             <svg width="79px" height="22px" viewBox="0 0 79 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -60,11 +62,6 @@
             </a>
           </div>
 
-
-          <div class="c-header-item">
-          </div>
-
-
         </div>
 
         <div class="mobile">
@@ -87,7 +84,6 @@
 
       </div>
 
-
       <div class="c-header-right">
           <div class="c-header-item">
             <a class="c-header-item-link" href="#">
@@ -97,11 +93,12 @@
             </a>
           </div>
       </div>
+
     </header>
 
 
 	<div class="page-content">
-    <div class="c-sidenav c-sidenav- c-sidenav-main">
+    <div class="c-sidenav c-sidenav-main">
 
       <!-- Sidebar mobile toggler -->
       <div class="c-sidenav-mobile-toggler">
@@ -178,6 +175,13 @@
             </a>
           </li>
 
+          <li class="c-sidenav-menu-item">
+            <a href="quickview.html" class="c-sidenav-menu-link">
+              <i class="fas fa-eye"></i>
+              <span>Quickview</span>
+            </a>
+          </li>
+
           <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
             <a href="#" class="c-sidenav-menu-link">
                 <i class="fas fa-layer-group"></i> <span>Menu levels</span>
@@ -221,7 +225,6 @@
             </ul>
           </li>
 
-
           <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
             <a href="#" class="c-sidenav-menu-link">
                 <i class="far fa-window-restore"></i> <span>Content Sidebars</span>
@@ -239,16 +242,18 @@
             <li class="c-sidenav-divider"></li>
 
           </li>
+
         </ul>
 
       </div>
 
     </div>
+
     <!-- Secondary sidebar -->
-    <div class="c-sidenav c-sidenav-secondary">
+    <div class="c-sidenav c-sidenav-secondary c-bg-gray-0">
 
       <!-- Sidebar mobile toggler -->
-      <div class="c-sidenav-mobile-toggler text-center">
+      <div class="c-sidenav-mobile-toggler c-text-center">
         <a href="#" class="c-sidenav-mobile-secondary-toggle">
           <i class="far fa-arrow-to-left"></i>
         </a>
@@ -260,47 +265,75 @@
       </div>
       <!-- /sidebar mobile toggler -->
 
-
       <!-- Sidebar content -->
       <div class="c-sidenav-body">
-        <ul class="c-sidenav-menu" data-nav-type="accordion">
-          <li class="c-sidenav-menu-category">Category title</li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-university"></i> Link</a>
-          </li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-hospital"></i> Another link</a>
-          </li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link">
-              <i class="fas fa-user-astronaut"></i>
-              Link with badge
-              <span class="badge bg-primary badge-pill ml-auto">2</span>
-            </a>
-          </li>
-          <li class="c-sidenav-divider"></li>
-          <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-layer-group"></i> Menu levels</a>
-            <ul class="c-sidenav-menu-submenu-group" style="display: none;">
-              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-              <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
-                <a href="#" class="c-sidenav-menu-link">Second level with child</a>
-                <ul class="c-sidenav-menu-submenu-group" style="display: none;">
-                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-                  <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
-                    <a href="#" class="c-sidenav-menu-link">Third level with child</a>
-                    <ul class="c-sidenav-menu-submenu-group" style="display: none;">
-                      <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-                      <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-                    </ul>
-                  </li>
-                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-                </ul>
-              </li>
-              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-            </ul>
-          </li>
-        </ul>
+
+          <div class="c-media-list c-media-list-hover c-p-top-md">
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-envelope c-text-primary-7" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Inbox</div>
+              </div>
+              <span class="c-badge c-badge-primary c-badge-rounded">6</span>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-clock c-text-warning-7" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Snoozed</div>
+              </div>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fa fa-check c-text-success-7" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Done</div>
+              </div>
+              <span class="c-badge c-badge-success c-badge-rounded">10</span>
+            </div>
+
+          </div>
+
+          <hr class="c-hr">
+
+          <div class="c-media-list c-media-list-hover">
+            <div class="c-media c-media-middle">
+              <i class="fal fa-envelope-open c-text-gray-6" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Drafts</div>
+              </div>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-paper-plane c-text-gray-6" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Sent</div>
+              </div>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-bell c-text-gray-6" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Reminders</div>
+              </div>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-trash c-text-gray-6" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Trash</div>
+              </div>
+            </div>
+
+            <div class="c-media c-media-middle">
+              <i class="fal fa-user c-text-gray-6" aria-hidden="true"></i>
+              <div class="c-media-body">
+                <div class="c-text-md">Contacts</div>
+              </div>
+            </div>
+          </div>
+          <hr class="c-hr">
 
       </div>
       <!-- /sidebar content -->
@@ -312,14 +345,13 @@
         <div class="page-header page-header-light">
           <div class="page-header-content">
             <div class="page-title">
-              <h4>Starters - Sidebar Right Visible</h4>
+              <h4>Starters - Both Sidebar Visible</h4>
             </div>
           </div>
         </div>
         <div class="content">
-          <div class="card">
-            <div class="card-body">
-
+          <div class="c-card">
+            <div class="c-card-content">
               <h1>I'm going to tell you something that I've never told anyone before.</h1>
               <p>Keep your mind limber. God created pudding, and then he rested. Rorschach would say you have a hard time
                 relating to others. Watching ice melt. This is fun. You all right, Dexter?</p>
@@ -372,6 +404,7 @@
             </div>
           </div>
         </div>
+
         <div class="c-footer">
           <div class="c-footer-left">
               © 2016 Ipreo. All Rights Reserved.
@@ -387,13 +420,15 @@
                   <a href="javascript:void(0)" class="c-a">Terms of Use</a>
               </div>
           </div>
-        </div>    </div>
+        </div>
+
+    </div>
 
     <!-- Right sidebar -->
     <div class="c-sidenav c-sidenav-right">
 
       <!-- Sidebar mobile toggler -->
-      <div class="c-sidenav-mobile-toggler text-center">
+      <div class="c-sidenav-mobile-toggler c-text-center">
         <a href="#" class="c-sidenav-mobile-expand">
           <i class="far fa-expand-wide"></i>
           <i class="far fa-expand-alt"></i>
@@ -404,7 +439,6 @@
         </a>
       </div>
       <!-- /sidebar mobile toggler -->
-
 
       <!-- Sidebar content -->
       <div class="c-sidenav-body">
@@ -454,12 +488,12 @@
     </div>
     <!-- /right sidebar -->
 
-
-    </div>
+  </div>
 
   <!-- Core JS files -->
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/app.js"></script>
-	<!-- /Core JS files -->
+  <!-- /Core JS files -->
+
   </body>
 </html>

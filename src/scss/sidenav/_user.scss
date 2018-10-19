@@ -11,7 +11,7 @@
   }
 
   &-info-image {
-    margin-bottom: $space-md;
+    margin: $space-sm 0;
     border-radius: 50%;
   }
 
@@ -19,6 +19,7 @@
     font-size: 12px;
     text-align: center;
     color: #ffffff;
+    margin: $space-xs 0;
   }
 
   &-info-location {
@@ -49,10 +50,6 @@
 
   .c-sidenav-menu {
     display: none;
-
-    &.show {
-      display: flex;
-    }
   }
 }
 

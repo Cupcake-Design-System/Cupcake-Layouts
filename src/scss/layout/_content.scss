@@ -18,7 +18,37 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  margin: 0; // 1
+  font-family: $font-family-base;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15; // 3
+  color: $body-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
 }
+
+
+// Remove top margins from headings
+//
+// By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
+// margin for easier control within type scales as it avoids margin collapsing.
+// stylelint-disable selector-list-comma-newline-after
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// stylelint-enable selector-list-comma-newline-after
+
+// Reset margins on paragraphs
+//
+// Similarly, the top margin on `<p>`s get reset. However, we also reset the
+// bottom margin to use `rem` units instead of `em`.
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 
 // Main container
 .page-content {
@@ -40,25 +70,6 @@ body {
   flex-grow: 1;
 
   @include clearfix;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: white;
-  background-clip: border-box;
-  border: 1px solid #dddddd;
-  box-shadow: 0 2px 4px 0 rgba(33, 37, 41, .05);
-  margin-bottom: 1rem;
-  border-radius: 2px;
-
-  &-body {
-    flex: 1 1 auto;
-    padding: 1rem;
-  }
 }
 
 .main {
@@ -100,7 +111,7 @@ body {
     transition: margin .1s ease;
   }
 
-  .navbar-dark {
+  .c-header {
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -124,47 +135,10 @@ body {
 
 
 /// for demo
-.c-avatar {
-  position: relative;
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  color: #ffffff;
-  background: #f1f3f5;
-  border-radius: 50%;
-  text-align: center;
-  white-space: nowrap;
-  font-weight: 700;
-  font-size: 12px;
-  vertical-align: middle;
-  margin: 0;
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, .06);
-}
-
-.c-avatar[data-text]::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .c-avatar-secondary {
-  background: #f1f3f5;
   margin-right: 8px;
 }
 
-.c-avatar-secondary {
-  color: #495057;
-}
-
-.c-avatar-sm {
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  font-size: .8rem;
-}
 
 .display-flex {
   flex-direction: column !important;

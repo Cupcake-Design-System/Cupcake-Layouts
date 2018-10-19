@@ -1,21 +1,20 @@
 .c-sidenav-mobile-toggler {
   display: none;
-  // display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #000000;
-  border-bottom-color: #000000;
+  color: $color-gray-8;
+  border-bottom: 1px solid $color-gray-4;
   height: $header-default-height;
-  padding: $space-sm;
+  padding: 0 $space-sm;
 
   a {
-    color: #000000;
-    padding: $space-sm;
+    color: $color-gray-8;
+    padding: $space-xs $space-sm;
     transition: all ease-in-out 0.15s;
 
     &:hover {
-      color: #e6e6e6;
-      background-color: #000000;
+      color: $color-gray-8;
+      background-color: $color-gray-1;
     }
   }
 }

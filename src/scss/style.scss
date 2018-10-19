@@ -4,10 +4,6 @@
 @import "mixins";
 @import "variables";
 
-
-// Reset
-@import "reset";
-
 // Content
 @import "layout/content";
 
@@ -19,6 +15,9 @@
 
 // Footer
 @import "layout/page-header";
+
+// Quickview
+@import "quickview/quickview";
 
 // Sidenav
 @import "sidenav/index";

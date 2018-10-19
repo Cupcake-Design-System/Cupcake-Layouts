@@ -5,6 +5,7 @@
   background-color: $sidebar-default-bg-color;
   color: $sidebar-default-color;
   border-right: $sidebar-default-border;
+  font-size: $sidebar-default-font-size;
   background-clip: content-box;
   position: static;
   transition: none;
@@ -41,10 +42,10 @@
 
   &-right {
     right: -($sidebar-default-width);
+    border-left: $sidebar-default-border;
     display: none;
     z-index: 97;
     border-right: 0;
-    border-left: $sidebar-default-border;
 
     .c-sidenav-body {
       right: 0;

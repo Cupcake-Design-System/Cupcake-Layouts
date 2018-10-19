@@ -22,10 +22,11 @@
     .c-sidenav-menu-item > .c-sidenav-menu-link {
       font-weight: 500;
 
-      &.active {
-        background-color: #e00096;
-        color: #ffffff;
-      }
+      // if we need custom top level active color
+      // &-active {
+      //   background-color: #e00096;
+      //   color: #ffffff;
+      // }
     }
   }
 
@@ -33,31 +34,28 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    padding: 8px 16px;
-    line-height: 32px;
-    color: #263238;
+    padding: $sidebar-link-padding;
+    line-height: $sidebar-link-line-height;
+    color: $sidebar-link-color;
     transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
 
     i {
-      margin-right: 16px;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      top: 0;
-      font-size: 16px;
-      color: #adb5bd;
+      margin: $sidebar-link-icon-margin;
+      font-size: $sidebar-link-icon-font-size;
+      color: $sidebar-link-icon-color;
     }
 
     &:hover {
-      color: #263238;
-      background-color: #f8f9fa;
+      color: $sidebar-link-hover-color;
+      background-color: $sidebar-link-hover-bg;
     }
 
     &-active {
-      background-color: #f8f9fa;
-      color: #263238;
+      background-color: $sidebar-link-active-bg;
+      color: $sidebar-link-active-color;
 
       i {
-        color: #1c7cd6;
+        color: $sidebar-link-icon-color-active;
       }
 
       // &:hover {
@@ -68,9 +66,9 @@
   }
 
   .c-sidenav-menu-category {
-    padding: 8px 16px;
-    margin-top: 8px;
-    color: #888888;
+    padding: $sidebar-category-padding;
+    margin-top: $sidebar-category-margin-top;
+    color: $sidebar-category-color;
 
     > i {
       display: none;
@@ -78,8 +76,12 @@
   }
 
   .c-sidenav-menu-item-open > .c-sidenav-menu-link:not(.disabled) {
-    color: #263238;
-    background-color: #f8f9fa;
+    color: $sidebar-link-open-color;
+    background-color: $sidebar-link-open-bg;
+
+    i {
+      color: $sidebar-link-icon-color-active;
+    }
   }
 }
 
@@ -114,24 +116,23 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  background-color: #ffffff;
+  background-color: $sidebar-submenu-bg;
 
   .c-sidenav-menu-link {
-    padding: 4px 16px 4px 48px;
-    line-height: 32px;
+    padding-left: $sidebar-submenu-link-padding-left;
 
     &-active {
-      color: #1c7cd6;
+      color: $sidebar-submenu-link-active-color;
     }
   }
 
   .c-sidenav-menu-submenu-group {
     .c-sidenav-menu-link {
-      padding-left: 64px;
+      padding-left: $sidebar-submenu-level3-padding-left;
     }
 
     .c-sidenav-menu-submenu-group .c-sidenav-menu-link {
-      padding-left: 80px;
+      padding-left: $sidebar-submenu-level4-padding-left;
     }
   }
 }

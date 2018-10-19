@@ -7,42 +7,64 @@
 // Grey shades
 
 $body-bg                           : $color-gray-0;
-$body-color                        : $color-black;
+$body-color                        : $color-gray-8;
 
 
 // Images
 $img-path:                                url('../images/user_bg4.jpg') !default;
 
-
-// Transition timers
-$component-transition-timer:              0.15s !default;
-$component-transition-delay:              0.15s !default;
-$transition-base                   : all .15s ease-in-out;
-
-//
-// Fonts
-//
-// Font, line-height, and color for body text, headings, and more.
-
 // Font families
 $font-family-base                  : $font-family-sans;
 
-// Font sizes
-$font-size-base                    : 0.8125rem; // Assumes the browser default, typically `16px`
-$line-height-base                  : 1.5385;
-$font-weight-base                  : 400;
 
-// Line heights
-$caret-width:                 .3em !default;
+// --------------------------------------------
+// Sidebar ------------------------------------
+// --------------------------------------------
+$sidebar-default-width        : 256px;
+$sidebar-folded-default-width : 56px;
+$sidebar-default-font-size    : 14px;
+$sidebar-default-bg-color     : $color-white;
+$sidebar-default-color        : $color-gray-8;
+$sidebar-default-border       : 1px solid $color-gray-3;
+$sidebar-default-hover-bg     : $color-gray-1;
+$sidebar-default-active-color : $color-primary-8;
+$sidebar-divider-default-color: $color-gray-3;
 
+// Menu Links
+$sidebar-link-padding               : $space-sm $space-md !default;
+$sidebar-link-line-height           : $space-xl !default;
+$sidebar-link-color                 : $sidebar-default-color !default;
+$sidebar-link-hover-color           : $sidebar-default-color !default;
+$sidebar-link-hover-bg              : $sidebar-default-hover-bg !default;
+$sidebar-link-active-bg             : $color-gray-1 !default;
+$sidebar-link-active-color          : $sidebar-default-color !default;
+$sidebar-link-open-bg               : $sidebar-default-hover-bg !default;
+$sidebar-link-open-color            : $sidebar-default-color !default;
 
-$sidebar-default-width: 256px;
-$sidebar-folded-default-width: 56px;
-$sidebar-default-bg-color: $color-white;
-$sidebar-default-color: $color-black;
-$sidebar-default-border: 1px solid $color-gray-4;
-$sidebar-divider-default-color: $color-gray-4;
-$header-default-height: 48px;
+// Icon
+$sidebar-link-icon-margin           : $space-sm $space-md $space-sm 0 !default;
+$sidebar-link-icon-color            : $color-gray-5 !default;
+$sidebar-link-icon-color-active     : $sidebar-default-active-color !default;
+$sidebar-link-icon-font-size        : 16px !default;
+
+// Category
+$sidebar-category-padding           : $space-sm $space-md;
+$sidebar-category-margin-top        : $space-sm;
+$sidebar-category-color             : $color-gray-6;
+
+// SubMenu
+$sidebar-submenu-bg                 : $color-white !default;
+$sidebar-submenu-link-active-color  : $sidebar-default-active-color !default;
+$sidebar-submenu-link-padding-left  : 48px !default;
+$sidebar-submenu-link-line-height   : 32px !default;
+$sidebar-submenu-level3-padding-left: 64px !default;
+$sidebar-submenu-level4-padding-left: 80px !default;
+
+// --------------------------------------------
+// Sidebar End --------------------------------
+// --------------------------------------------
+
+$header-default-height        : 48px;
 
 $footer-font-size       : 12px !default;
 $footer-color           : $color-gray-6 !default;
@@ -67,3 +89,30 @@ $header-borders           : rgba(255, 255, 255, 0.1) !default;
 $header-logo-max-width    : 120px !default;
 $header-height            : 48px !default;
 $header-logo-width        :  85px !default;
+
+
+// --------------------------------------------
+// Quickview Start ----------------------------
+// --------------------------------------------
+$quickview-namespace     : "c-quickview" !default;
+$zindex-quickview        : 999 !default;
+$width-quickview-sm      : 220px !default;
+$width-quickview         : 300px !default;
+$width-quickview-lg      : 400px !default;
+$width-quickview-xl      : 500px !default;
+$quickview-bg            : #ffffff !default;
+$quickview-footer-bg     : #fcfdfe !default;
+$quickview-footer-height : 50px !default;
+$quickview-footer-padding: 0 16px !default;
+$quickview-header-height : 50px !default;
+$quickview-header-padding: 0 20px !default;
+$quickview-header-border : #ebebeb !default;
+$offcanvas-right-shadow:  5px 15px 13px 3px rgba(0, 0, 0, 0.1);
+$offcanvas-left-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !default;
+$layout-transition: 0.3s ease !default;
+$zindex-backdrop-quickview: 998 !default;
+$backdrop-bg-light: rgba(255, 255, 255, 0.7);
+$backdrop-bg-dark: rgba(0, 0, 0, 0.5);
+// --------------------------------------------
+// Quickview End ------------------------------
+// --------------------------------------------
