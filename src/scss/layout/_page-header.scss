@@ -1,50 +1,137 @@
-/* ------------------------------------------------------------------------------
- *
- *  # Page header
- *
- *  Page header components and color options
- *
- * ---------------------------------------------------------------------------- */
 
-
-// Page title
-.page-title {
-  padding: $space-md 0;
+.c-page-header {
   position: relative;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #ebebeb;
 
-  h4 {
-    font-size: 14px;
-    font-weight: 600;
-    color: $color-gray-8;
+  .c-tabs {
+    box-shadow: none;
   }
 }
 
-// Page header content
-.page-header-content {
+
+//-----------------------------------------------------------------
+// Header bar
+//
+.c-page-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f2f3;
+
+  > * {
+    margin-bottom: 0;
+  }
+}
+
+
+//-----------------------------------------------------------------
+// Page info
+//
+
+.c-page-header-title {
+  font-weight: 600;
+  color: #4b4d52;
+  margin: 0;
+
+  small {
+    display: block;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: inherit;
+    opacity: 0.7;
+    padding-top: 10px;
+  }
+}
+
+
+.c-page-header-info {
+  margin: 24px 0;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  .left {
+    flex: 1;
+  }
+
+  .c-breadcrumb {
+    margin: 10px 0 0;
+  }
+}
+
+
+//-----------------------------------------------------------------
+// Page actions
+//
+.c-page-header-action {
   position: relative;
-  padding: 0 $space-md;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  &-buttons {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    transform: translateY(50%);
+
+    .c-btn {
+      margin-left: 4px;
+      display: inline-flex;
+      border-radius: 100px;
+    }
+  }
 }
 
 
+//-----------------------------------------------------------------
+// Page header skins
 //
-// Page header colors
-//
 
-// Light
-.page-header-light {
-  background-color: $page-header-light-bg;
+// Transparent
+.c-page-header-transparent {
+  background-color: transparent;
+  border-bottom: 0;
 }
 
-// Dark
-.page-header-dark {
-  background-color: $page-header-dark-bg;
-  color: $page-header-dark-color;
-}
+// Inverse
+.c-page-header-inverse {
+  background-color: #454545;
 
-// Common
-.page-header-light,
-.page-header-dark {
-  border-bottom: 1px solid #dee2e6;
+  .c-page-header-info {
+    .c-page-header-title {
+      color: #ffffff;
+    }
+  }
+
+  &[class*="c-bg-"] {
+    .c-page-header-action .nav-link {
+      &.active,
+      &:hover {
+        border-bottom-color: rgba(#ffffff, .7);
+      }
+    }
+
+    .c-page-header-action .dropdown.show .nav-link {
+      border-bottom-color: rgba(#ffffff, .7);
+    }
+  }
 }
 

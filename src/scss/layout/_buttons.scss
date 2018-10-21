@@ -1,0 +1,285 @@
+// Context colors
+$color-primary:          #8500de !default;
+$color-secondary:        #e4e7ea !default;
+$color-success:          #15c377 !default; // 46be8a
+$color-info:             #48b0f7 !default;
+$color-warning:          #faa64b !default;
+$color-danger:           #f96868 !default;
+
+$zindex-fab:                9 !default;
+
+// General button colors
+@mixin btn-colors($color, $percentage) {
+  background-color: $color;
+  border-color: $color;
+  color: #ffffff;
+
+  &:hover {
+    background-color: lighten($color, $percentage);
+    border-color: lighten($color, $percentage);
+    color: #ffffff;
+  }
+
+  &:focus,
+  &.focus {
+    color: #ffffff;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $color;
+    border-color: $color;
+    opacity: 0.5;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: darken($color, $percentage);
+    border-color: darken($color, $percentage);
+    color: #ffffff;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  padding: 5px 16px;
+  line-height: inherit;
+  color: #929daf;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border-color: #ebebeb;
+  outline: none !important;
+  transition: 0.15s linear;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    box-shadow: none;
+  }
+}
+
+//-----------------------------------------------------------------
+// Border modifiers
+//
+.btn-round {
+  border-radius: 10rem;
+}
+
+//-----------------------------------------------------------------
+// Button variations
+//
+.btn-primary {
+  @include btn-colors($color-primary, 8%);
+}
+
+.btn-success {
+  @include btn-colors($color-success, 3%);
+}
+
+.btn-info {
+  @include btn-colors($color-info, 6%);
+}
+
+.btn-warning {
+  @include btn-colors($color-warning, 5%);
+}
+
+.btn-danger {
+  @include btn-colors($color-danger, 5%);
+}
+
+.btn-secondary {
+  color: #616a78 !important;
+
+  @include btn-colors($color-secondary, 3%);
+}
+
+.btn-link {
+  color: $color-info;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+}
+
+.btn-light {
+  background-color: #fcfdfe;
+  border-color: #ebebeb;
+  color: #929daf;
+
+  &:hover,
+  &:focus {
+    background-color: #f9fafb;
+    color: #929daf;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: #f9fafb;
+    color: #929daf;
+  }
+}
+
+
+//-----------------------------------------------------------------
+// Floating buttons
+//
+.btn-float {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  border-radius: 100%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .15);
+
+  &.c-btn-sm {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+
+    i {
+      font-size: 16px;
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  i {
+    font-size: 24px;
+  }
+}
+
+.fab {
+  position: relative;
+  display: inline-block;
+  z-index: $zindex-fab;
+
+  > .c-btn {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.fab-fixed {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.fab-buttons {
+  position: absolute;
+  bottom: 64px;
+  right: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+
+  li {
+    padding: 4px 0;
+    text-align: right;
+    opacity: 0;
+    transition: .4s;
+
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) { transform: translateY(103% * $i); }
+    }
+  }
+}
+
+.fab-icon-default,
+.fab-icon-active {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: .5s;
+}
+
+.fab-icon-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+
+.fab > .c-btn.active {
+  .fab-icon-default {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  .fab-icon-active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  + .fab-buttons li {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+// Directions
+//
+.fab-dir-bottom .fab-buttons {
+  top: 64px;
+  flex-direction: column;
+
+  li {
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) { transform: translateY(-103% * $i); }
+    }
+  }
+}
+
+
+.fab-dir-left .fab-buttons {
+  top: 0;
+  right: 64px;
+  flex-direction: row-reverse;
+
+  li {
+    padding: 8px 4px;
+
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) { transform: translateX(103% * $i); }
+    }
+  }
+}
+
+
+.fab-dir-right .fab-buttons {
+  top: 0;
+  left: 64px;
+  flex-direction: row;
+
+  li {
+    padding: 8px 4px;
+
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) { transform: translateX(-103% * $i); }
+    }
+  }
+}
+

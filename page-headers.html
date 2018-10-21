@@ -15,11 +15,10 @@
 
 </head>
 
-<body class="c-sidenav-right-visible">
+<body>
 
     <header class="c-header">
       <div class="c-header-left">
-
         <div class="c-header-item">
           <a href="#" class="c-header-item-link c-header-logo">
             <svg width="79px" height="22px" viewBox="0 0 79 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -50,18 +49,6 @@
             </a>
           </div>
 
-          <div class="c-header-item">
-            <a href="#" class="c-header-item-link c-sidenav-secondary-toggle">
-              <i class="fas fa-arrow-left"></i>
-            </a>
-          </div>
-
-          <div class="c-header-item">
-            <a href="#" class="c-header-item-link c-sidenav-right-toggle">
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-
         </div>
 
         <div class="mobile">
@@ -84,6 +71,7 @@
 
       </div>
 
+
       <div class="c-header-right">
           <div class="c-header-item">
             <a class="c-header-item-link" href="#">
@@ -93,7 +81,6 @@
             </a>
           </div>
       </div>
-
     </header>
 
 
@@ -169,7 +156,7 @@
           </li>
 
           <li class="c-sidenav-menu-item">
-            <a href="index.html" class="c-sidenav-menu-link c-sidenav-menu-link-active">
+            <a href="index.html" class="c-sidenav-menu-link">
               <i class="fas fa-home"></i>
               <span>Dashboard</span>
             </a>
@@ -179,7 +166,7 @@
               <a href="#" class="c-sidenav-menu-link">
                   <i class="far fa-window-restore"></i> <span>Content Sidebars</span>
               </a>
-  
+
               <ul class="c-sidenav-menu-submenu-group">
                 <li class="c-sidenav-menu-item">
                   <a href="sidebar_content_left.html" class="c-sidenav-menu-link">Left sidebar</a>
@@ -188,9 +175,8 @@
                   <a href="sidebar_content_right.html" class="c-sidenav-menu-link">Right sidebar</a>
                 </li>
               </ul>
-  
-            </li>
 
+            </li>
 
           <li class="c-sidenav-menu-item">
             <a href="quickview.html" class="c-sidenav-menu-link">
@@ -200,11 +186,12 @@
           </li>
 
           <li class="c-sidenav-menu-item">
-              <a href="page-headers.html" class="c-sidenav-menu-link">
+              <a href="page-headers.html" class="c-sidenav-menu-link c-sidenav-menu-link-active">
                 <i class="fas fa-arrow-alt-from-bottom"></i>
                 <span>Page Headers</span>
               </a>
           </li>
+
 
           <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
             <a href="#" class="c-sidenav-menu-link">
@@ -255,98 +242,6 @@
 
     </div>
 
-    <!-- Secondary sidebar -->
-    <div class="c-sidenav c-sidenav-secondary c-bg-gray-0">
-
-      <!-- Sidebar mobile toggler -->
-      <div class="c-sidenav-mobile-toggler c-text-center">
-        <a href="#" class="c-sidenav-mobile-secondary-toggle">
-          <i class="far fa-arrow-to-left"></i>
-        </a>
-        <span class="font-weight-semibold">Secondary sidebar</span>
-        <a href="#" class="c-sidenav-mobile-expand">
-          <i class="far fa-expand-wide"></i>
-          <i class="far fa-expand-alt"></i>
-        </a>
-      </div>
-      <!-- /sidebar mobile toggler -->
-
-      <!-- Sidebar content -->
-      <div class="c-sidenav-body">
-
-          <div class="c-media-list c-media-list-hover c-p-top-md">
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-envelope c-text-primary-7" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Inbox</div>
-              </div>
-              <span class="c-badge c-badge-primary c-badge-rounded">6</span>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-clock c-text-warning-7" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Snoozed</div>
-              </div>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fa fa-check c-text-success-7" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Done</div>
-              </div>
-              <span class="c-badge c-badge-success c-badge-rounded">10</span>
-            </div>
-
-          </div>
-
-          <hr class="c-hr">
-
-          <div class="c-media-list c-media-list-hover">
-            <div class="c-media c-media-middle">
-              <i class="fal fa-envelope-open c-text-gray-6" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Drafts</div>
-              </div>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-paper-plane c-text-gray-6" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Sent</div>
-              </div>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-bell c-text-gray-6" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Reminders</div>
-              </div>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-trash c-text-gray-6" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Trash</div>
-              </div>
-            </div>
-
-            <div class="c-media c-media-middle">
-              <i class="fal fa-user c-text-gray-6" aria-hidden="true"></i>
-              <div class="c-media-body">
-                <div class="c-text-md">Contacts</div>
-              </div>
-            </div>
-          </div>
-          <hr class="c-hr">
-
-      </div>
-      <!-- /sidebar content -->
-
-    </div>
-    <!-- /secondary sidebar -->
-
 		<div class="content-wrapper">
       <header class="c-page-header">
         <div class="c-page-header-info">
@@ -357,59 +252,229 @@
         </div>
       </header>
 
+
         <div class="content">
-          <div class="c-card">
-            <div class="c-card-content">
+
+                <p>Base</p>
+                <header class="c-page-header">
+                  <div class="c-page-header-info">
+                    <h2 class="c-page-header-title"><strong>Page</strong> header</h2>
+                  </div>
+                </header>
+
+                <br><br>
+
+                <p>With description</p>
+                <header class="c-page-header">
+                  <div class="c-page-header-info">
+                    <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">Some description about the page</small></h2>
+                  </div>
+                </header>
+
+                <br><br>
+
+                <p>Transparent</p>
+                <p><code>.header-transparent</code> applies to <em>.header</em></p>
+                <header class="c-page-header c-page-header-transparent">
+                  <div class="c-page-header-info">
+                    <h2 class="c-page-header-title"><strong>Page</strong> headers <small class="subtitle">You'll see different examples of page header</small></h2>
+                  </div>
+                </header>
 
 
+                <br><br>
 
-              <h2>Oh I beg to differ, I think we have a lot to discuss. After all, you are a client.</h2>
-              <p>I love Halloween. The one time of year when everyone wears a mask … not just me. Rorschach would say you have
-                a hard time relating to others. I think he's got a crush on you, Dex! Pretend. You pretend the feelings are
-                there, for the world, for the people around you. Who knows? Maybe one day they will be.</p>
-              <ol>
-                <li>I'm not the monster he wants me to be. So I'm neither man nor beast. I'm something new entirely. With my
-                  own set of rules. I'm Dexter. Boo.</li>
-                <li>I feel like a jigsaw puzzle missing a piece. And I'm not even sure what the picture should be.</li>
-                <li>I'm Dexter, and I'm not sure what I am.</li>
-              </ol>
+                <p>Inverse</p>
+                <p><code>.header-inverse</code> applies to <em>.header</em></p>
+                <header class="c-page-header c-page-header-inverse">
+                  <div class="c-page-header-info">
+                    <h2 class="c-page-header-title"><strong>Page</strong> headers <small class="subtitle">You'll see different examples of page header</small></h2>
+                  </div>
+                </header>
 
-              <h3>This man is a knight in shining armor.</h3>
-              <p>You look…perfect. I like seafood. I think he's got a crush on you, Dex! I am not a killer.</p>
-              <ul>
-                <li>You're a killer. I catch killers.</li>
-                <li>I'm really more an apartment person.</li>
-                <li>Tell him time is of the essence.</li>
-              </ul>
+                <br><br>
 
-              <p>Rorschach would say you have a hard time relating to others. Oh I beg to differ, I think we have a lot to
-                discuss. After all, you are a client. Rorschach would say you have a hard time relating to others.</p>
-              <p>Hello, Dexter Morgan. I'm real proud of you for coming, bro. I know you hate funerals. Finding a needle in a
-                haystack isn't hard when every straw is computerized. Cops, another community I'm not part of.</p>
-              <p>I'm not the monster he wants me to be. So I'm neither man nor beast. I'm something new entirely. With my own
-                set of rules. I'm Dexter. Boo. I'm generally confused most of the time. This man is a knight in shining armor.</p>
-              <p>Makes me a … scientist. Under normal circumstances, I'd take that as a compliment. I love Halloween. The one
-                time of year when everyone wears a mask … not just me. Rorschach would say you have a hard time relating to
-                others.</p>
-              <p>I'm real proud of you for coming, bro. I know you hate funerals. Makes me a … scientist. I'm generally
-                confused most of the time. I will not kill my sister. I will not kill my sister. I will not kill my sister.</p>
-              <p>Keep your mind limber. I'm doing mental jumping jacks. Oh I beg to differ, I think we have a lot to discuss.
-                After all, you are a client. I've lived in darkness a long time. Over the years my eyes adjusted until the dark
-                became my world and I could see.</p>
-              <p>I'm Dexter, and I'm not sure what I am. God created pudding, and then he rested. He taught me a code. To
-                survive. I feel like a jigsaw puzzle missing a piece. And I'm not even sure what the picture should be.</p>
-              <p>Pretend. You pretend the feelings are there, for the world, for the people around you. Who knows? Maybe one
-                day they will be. I'm thinking two circus clowns dancing. You? Tell him time is of the essence.</p>
-              <p>You all right, Dexter? I think he's got a crush on you, Dex! I'm partial to air conditioning. Makes me a …
-                scientist.</p>
-              <p>Rorschach would say you have a hard time relating to others. Hello, Dexter Morgan. Pretend. You pretend the
-                feelings are there, for the world, for the people around you. Who knows? Maybe one day they will be.</p>
-              <p>I'm really more an apartment person. I think he's got a crush on you, Dex! You all right, Dexter? Cops,
-                another community I'm not part of. I'm a sociopath; there's not much he can do for me.</p>
-            </div>
-          </div>
+                <p>Colors</p>
+                <p><code>.header-inverse</code> and <code>.c-bg-*</code>
+                  <a href="" target="_blank">utility class</a> applies to <em>.header</em> which <code>*</code> is a color name.</p>
+
+                <header class="c-page-header c-page-header-inverse c-bg-primary">
+                  <div class="c-page-header-info">
+                    <h2 class="c-page-header-title"><strong>Page</strong> headers <small class="subtitle">You'll see different examples of page header</small></h2>
+                  </div>
+                </header>
+
+
+                <br><br>
+
+                <p>With Breadcrumbs</p>
+
+                <header class="c-page-header">
+                  <div class="c-page-header-info">
+                    <div class="left">
+                      <h2 class="c-page-header-title"><strong>Page</strong> headers</h2>
+                      <ul class="c-breadcrumb">
+                        <li class="c-breadcrumb-item"><a class="c-a" href="#"> Home</a></li>
+                        <li class="c-breadcrumb-item"><a class="c-a" href="#"> Library</a></li>
+                        <li class="c-breadcrumb-item c-breadcrumb-item-active"> Data</li>
+                      </ul>
+                    </div>
+                  </div>
+                </header>
+
+                <br><br>
+
+                <p>With Buttons</p>
+
+                <header class="c-page-header">
+                  <div class="c-page-header-info">
+                    <div class="left">
+                      <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                    </div>
+
+                    <div class="right gap-items-2">
+                      <a class="c-btn c-btn-secondary c-btn-box" href="#" data-provide="tooltip" title="Print"><i class="fa fa-print"></i></a>
+                      <a class="c-btn c-btn-secondary c-btn-box" href="#" data-provide="tooltip" title="Save"><i class="fa fa-save"></i></a>
+                      <a class="c-btn c-btn-secondary c-btn-box" href="#" data-provide="tooltip" title="Settings"><i class="fa fa-cog"></i></a>
+                    </div>
+                  </div>
+                </header>
+
+                <br><br>
+
+                <p>Header bar</p>
+
+                <header class="c-page-header">
+                  <div class="c-page-header-bar">
+                    <span>Page title</span>
+                    <ul class="c-breadcrumb">
+                      <li class="c-breadcrumb-item"><a class="c-a" href="#"> Home</a></li>
+                      <li class="c-breadcrumb-item"><a class="c-a" href="#"> Library</a></li>
+                      <li class="c-breadcrumb-item c-breadcrumb-item-active"> Data</li>
+                    </ul>
+                  </div>
+
+                  <div class="c-page-header-info">
+                    <div class="left">
+                      <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                    </div>
+
+                    <div class="right">
+                      <h2 class="c-page-header-title c-text-right"><strong>Right</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                    </div>
+                  </div>
+                </header>
+
+                <br><br>
+                <p>Only header bar</p>
+                <header class="c-page-header no-border">
+                  <div class="c-page-header-bar">
+                    <span>Page title</span>
+                    <ul class="c-breadcrumb">
+                      <li class="c-breadcrumb-item"><a class="c-a" href="#"><i class="fa fa-home"></i> Home</a></li>
+                      <li class="c-breadcrumb-item"><a class="c-a" href="#"><i class="fa fa-book"></i> Library</a></li>
+                      <li class="c-breadcrumb-item c-breadcrumb-item-active"><i class="fa fa-user"></i> Data</li>
+                    </ul>
+                  </div>
+                </header>
+
+
+                <br><br>
+                <p>Navigation - Tabs</p>
+                <header class="c-page-header">
+                    <div class="c-page-header-info">
+                      <div class="left">
+                        <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                      </div>
+
+                      <div class="right">
+                        <h2 class="c-page-header-title c-text-right"><strong>Right</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                      </div>
+                    </div>
+
+                    <div class="c-page-header-action">
+                      <ul class="c-tabs">
+                        <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab A</a></li>
+                        <li class="c-tab-item"><a class="c-tab-item-link c-tab-item-link-active" href="#">Tab B</a></li>
+                        <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab C</a></li>
+                        <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab D</a></li>
+                      </ul>
+                    </div>
+                  </header>
+
+
+                  <br><br>
+                  <p>Action Buttons</p>
+                  <header class="c-page-header">
+                      <div class="c-page-header-info">
+                        <div class="left">
+                          <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                        </div>
+
+                        <div class="right">
+                            <h2 class="c-page-header-title c-text-right"><strong>Right</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                          </div>
+                      </div>
+
+                      <div class="c-page-header-action">
+                          <ul class="c-tabs">
+                              <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab A</a></li>
+                              <li class="c-tab-item"><a class="c-tab-item-link c-tab-item-link-active" href="#">Tab B</a></li>
+                              <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab C</a></li>
+                              <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab D</a></li>
+                            </ul>
+
+                        <div class="c-page-header-action-buttons">
+                          <a class="c-btn c-btn-danger c-btn-sm btn-float" href="#"><i class="fa fa-times"></i></a>
+                          <a class="c-btn c-btn-success c-btn-sm btn-float" href="#"><i class="fa fa-pencil-alt"></i></a>
+                          <a class="c-btn c-btn-primary btn-float" href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                      </div>
+                    </header>
+
+                    <br><br>
+                    <p>Action Buttons Expandable</p>
+
+                    <header class="c-page-header">
+                        <div class="c-page-header-info">
+                          <div class="left">
+                            <h2 class="c-page-header-title"><strong>Page</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                          </div>
+
+                          <div class="right">
+                              <h2 class="c-page-header-title c-text-right"><strong>Right</strong> header <small class="subtitle">You'll see different examples of page header</small></h2>
+                            </div>
+                        </div>
+
+                        <div class="c-page-header-action">
+                            <ul class="c-tabs">
+                                <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab A</a></li>
+                                <li class="c-tab-item"><a class="c-tab-item-link c-tab-item-link-active" href="#">Tab B</a></li>
+                                <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab C</a></li>
+                                <li class="c-tab-item"><a class="c-tab-item-link" href="#">Tab D</a></li>
+                              </ul>
+
+                          <div class="c-page-header-action-buttons">
+                            <div class="fab fab-dir-left">
+                              <button id="fab" class="c-btn btn-float c-btn-primary">
+                                <i class="fab-icon-default fa fa-plus"></i>
+                                <i class="fab-icon-active fa fa-times"></i>
+                              </button>
+
+                              <ul class="fab-buttons">
+                                <li><a class="c-btn btn-float c-btn-sm c-btn-primary" href="#"><i class="fas fa-pencil-alt"></i></a></li>
+                                <li><a class="c-btn btn-float c-btn-sm c-btn-success" href="#"><i class="fa fa-envelope"></i></a></li>
+                                <li><a class="c-btn btn-float c-btn-sm c-btn-danger" href="#"><i class="fa fa-bell"></i></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </header>
+
+                      <br><br>
+                      <br><br>
+
         </div>
-
         <div class="c-footer">
           <div class="c-footer-left">
               © 2016 Ipreo. All Rights Reserved.
@@ -426,79 +491,15 @@
               </div>
           </div>
         </div>
-
     </div>
 
-    <!-- Right sidebar -->
-    <div class="c-sidenav c-sidenav-right">
 
-      <!-- Sidebar mobile toggler -->
-      <div class="c-sidenav-mobile-toggler c-text-center">
-        <a href="#" class="c-sidenav-mobile-expand">
-          <i class="far fa-expand-wide"></i>
-          <i class="far fa-expand-alt"></i>
-        </a>
-        <span class="font-weight-semibold">Right sidebar</span>
-        <a href="#" class="c-sidenav-mobile-right-toggle">
-          <i class="far fa-arrow-to-right"></i>
-        </a>
-      </div>
-      <!-- /sidebar mobile toggler -->
-
-      <!-- Sidebar content -->
-      <div class="c-sidenav-body">
-
-        <ul class="c-sidenav-menu" data-nav-type="accordion">
-          <li class="c-sidenav-menu-category">Category title</li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-university"></i> Link</a>
-          </li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-hospital"></i> Another link</a>
-          </li>
-          <li class="c-sidenav-menu-item">
-            <a href="#" class="c-sidenav-menu-link">
-              <i class="fas fa-user-astronaut"></i>
-              Link with badge
-              <span class="badge bg-primary badge-pill ml-auto">2</span>
-            </a>
-          </li>
-          <li class="c-sidenav-divider"></li>
-          <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
-            <a href="#" class="c-sidenav-menu-link"><i class="fas fa-layer-group"></i> Menu levels</a>
-            <ul class="c-sidenav-menu-submenu-group" style="display: none;">
-              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-              <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
-                <a href="#" class="c-sidenav-menu-link">Second level with child</a>
-                <ul class="c-sidenav-menu-submenu-group" style="display: block;">
-                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-                  <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
-                    <a href="#" class="c-sidenav-menu-link">Third level with child</a>
-                    <ul class="c-sidenav-menu-submenu-group" style="display: block;">
-                      <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-                      <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-                    </ul>
-                  </li>
-                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-                </ul>
-              </li>
-              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-            </ul>
-          </li>
-        </ul>
-
-      </div>
-      <!-- /sidebar content -->
 
     </div>
-    <!-- /right sidebar -->
-
-  </div>
 
   <!-- Core JS files -->
 	<script src="dist/js/jquery.min.js"></script>
 	<script src="dist/js/app.js"></script>
-  <!-- /Core JS files -->
-
+	<!-- /Core JS files -->
   </body>
 </html>

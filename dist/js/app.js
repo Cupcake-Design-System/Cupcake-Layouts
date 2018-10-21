@@ -274,3 +274,8 @@ $("#dark-close").on("click", function () {
   $("#backdrop-dark").toggle();
   $("#qv-backdrop-dark").removeClass("reveal")
 });
+
+
+$("#fab").click(function(){
+  $(this).toggleClass("active");
+});
