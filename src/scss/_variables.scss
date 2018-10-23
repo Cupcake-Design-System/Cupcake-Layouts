@@ -6,27 +6,28 @@
 
 // Grey shades
 
-$body-bg                           : $color-gray-0;
-$body-color                        : $color-gray-6;
+$body-bg                            : $color-gray-0;
+$body-color                         : $color-gray-6;
+$border-color                       : $color-gray-3;
 
 
 // Images
-$img-path:                                url('../images/bg9.png') !default;
-$font-family-base                  : $font-family-sans;
+$img-path                           : url('../images/bg9.png') !default;
+$font-family-base                   : $font-family-sans;
 
 
 // --------------------------------------------
 // Sidebar ------------------------------------
 // --------------------------------------------
-$sidebar-default-width        : 256px;
-$sidebar-folded-default-width : 56px;
-$sidebar-default-font-size    : 14px;
-$sidebar-default-bg-color     : $color-white;
-$sidebar-default-color        : $color-gray-8;
-$sidebar-default-border       : 1px solid $color-gray-3;
-$sidebar-default-hover-bg     : $color-gray-1;
-$sidebar-default-active-color : $color-primary-8;
-$sidebar-divider-default-color: $color-gray-3;
+$sidebar-default-width              : 256px;
+$sidebar-folded-default-width       : 56px;
+$sidebar-default-font-size          : 14px;
+$sidebar-default-bg-color           : $color-white;
+$sidebar-default-color              : $color-gray-8;
+$sidebar-default-border             : 1px solid $border-color;
+$sidebar-default-hover-bg           : $color-gray-1;
+$sidebar-default-active-color       : $color-primary-8;
+$sidebar-divider-default-color      : $border-color;
 
 // Menu Links
 $sidebar-link-padding               : $space-sm $space-md !default;
@@ -46,9 +47,9 @@ $sidebar-link-icon-color-active     : $sidebar-default-active-color !default;
 $sidebar-link-icon-font-size        : 16px !default;
 
 // Category
-$sidebar-category-padding           : $space-sm $space-md;
-$sidebar-category-margin-top        : $space-sm;
-$sidebar-category-color             : $color-gray-6;
+$sidebar-category-padding           : $space-sm $space-md !default;
+$sidebar-category-margin-top        : $space-sm !default;
+$sidebar-category-color             : $color-gray-6 !default;
 
 // SubMenu
 $sidebar-submenu-bg                 : $color-white !default;
@@ -57,58 +58,63 @@ $sidebar-submenu-link-padding-left  : 48px !default;
 $sidebar-submenu-link-line-height   : 32px !default;
 $sidebar-submenu-level3-padding-left: 64px !default;
 $sidebar-submenu-level4-padding-left: 80px !default;
-
 // --------------------------------------------
 // Sidebar End --------------------------------
 // --------------------------------------------
 
-$footer-font-size       : 12px !default;
-$footer-color           : $color-gray-6 !default;
-$footer-color-link      : $color-gray-6 !default;
-$footer-background-color: $color-white !default;
-$footer-padding         : 0 $space-md !default;
-$footer-height          : 48px !default;
-$footer-trans-color     : $color-black !default;
+
+// --------------------------------------------
+// FOOTER START -------------------------------
+// --------------------------------------------
+$footer-font-size                   : 12px !default;
+$footer-color                       : $color-gray-6 !default;
+$footer-color-link                  : $color-gray-6 !default;
+$footer-background-color            : $color-white !default;
+$footer-padding                     : 0 $space-md !default;
+$footer-height                      : 48px !default;
+$footer-trans-color                 : $color-black !default;
+// --------------------------------------------
+// FOOTER END ---------------------------------
+// --------------------------------------------
 
 
-$page-header-light-bg:                       $color-white !default;
-$page-header-dark-bg:                        #273246 !default;
-$page-header-dark-color:                     $color-white !default;
+$page-header-bg                     : $color-white !default;
+$page-header-border                 : $border-color !default;
 
 
-$white                    : $color-white !default;
-$header-bottom-border     : #fcfcfc !default;
-$header-bg                : #0b3a56 !default;
-$header-bg-hover          : rgba(0, 0, 0, 0.1) !default;
-$header-text-color        : $color-white !default;
-$header-borders           : rgba(255, 255, 255, 0.1) !default;
-$header-logo-max-width    : 120px !default;
-$header-height            : 48px !default;
-$header-logo-width        : 85px !default;
+$white                              : $color-white !default;
+$header-bottom-border               : #fcfcfc !default;
+$header-bg                          : #0b3a56 !default;
+$header-bg-hover                    : rgba(0, 0, 0, 0.1) !default;
+$header-text-color                  : $color-white !default;
+$header-borders                     : rgba(255, 255, 255, 0.1) !default;
+$header-logo-max-width              : 120px !default;
+$header-height                      : 48px !default;
+$header-logo-width                  : 85px !default;
 
 
 // --------------------------------------------
 // Quickview Start ----------------------------
 // --------------------------------------------
-$quickview-namespace      : "c-quickview" !default;
-$zindex-quickview         : 999 !default;
-$width-quickview-sm       : 220px !default;
-$width-quickview          : 300px !default;
-$width-quickview-lg       : 400px !default;
-$width-quickview-xl       : 500px !default;
-$quickview-bg             : $color-white !default;
-$quickview-footer-bg      : $color-gray-0 !default;
-$quickview-footer-height  : $space-xl + $space-md !default;
-$quickview-footer-padding : 0 $space-md !default;
-$quickview-header-height  : $space-xl + $space-md !default;
-$quickview-header-padding : 0 $space-md !default;
-$quickview-header-border  : $color-gray-1 !default;
-$offcanvas-right-shadow   : 5px 15px 13px 3px rgba(0, 0, 0, 0.1) !default;
-$offcanvas-left-shadow    : 0 0 25px rgba(0, 0, 0, 0.1) !default;
-$layout-transition        : 0.3s ease !default;
-$zindex-backdrop-quickview: 998 !default;
-$backdrop-bg-light        : rgba(255, 255, 255, 0.7) !default;
-$backdrop-bg-dark         : rgba(0, 0, 0, 0.5) !default;
+$quickview-namespace                : "c-quickview" !default;
+$zindex-quickview                   : 999 !default;
+$width-quickview-sm                 : 220px !default;
+$width-quickview                    : 300px !default;
+$width-quickview-lg                 : 400px !default;
+$width-quickview-xl                 : 500px !default;
+$quickview-bg                       : $color-white !default;
+$quickview-footer-bg                : $color-gray-0 !default;
+$quickview-footer-height            : $space-xl + $space-md !default;
+$quickview-footer-padding           : 0 $space-md !default;
+$quickview-header-height            : $space-xl + $space-md !default;
+$quickview-header-padding           : 0 $space-md !default;
+$quickview-header-border            : $color-gray-1 !default;
+$offcanvas-right-shadow             : 5px 15px 13px 3px rgba(0, 0, 0, 0.1) !default;
+$offcanvas-left-shadow              : 0 0 25px rgba(0, 0, 0, 0.1) !default;
+$layout-transition                  : 0.3s ease !default;
+$zindex-backdrop-quickview          : 998 !default;
+$backdrop-bg-light                  : rgba(255, 255, 255, 0.7) !default;
+$backdrop-bg-dark                   : rgba(0, 0, 0, 0.5) !default;
 // --------------------------------------------
 // Quickview End ------------------------------
 // --------------------------------------------
