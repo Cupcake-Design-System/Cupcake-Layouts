@@ -40,8 +40,9 @@
 
 .c-page-header-title {
   font-weight: 600;
-  color: #4b4d52;
+  color: $color-gray-7;
   margin: 0;
+  font-size: 24px;
 
   small {
     display: block;
@@ -50,7 +51,7 @@
     line-height: 1.7;
     color: inherit;
     opacity: 0.7;
-    padding-top: 10px;
+    padding-top: $space-sm;
   }
 }
 
@@ -69,7 +70,7 @@
   }
 
   .c-breadcrumb {
-    margin: 10px 0 0;
+    margin: $space-sm 0 0;
   }
 }
 
@@ -79,7 +80,7 @@
 //
 .c-page-header-action {
   position: relative;
-  padding: 0 24px;
+  padding: 0 $space-md;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -93,7 +94,7 @@
     transform: translateY(50%);
 
     .c-btn {
-      margin-left: 4px;
+      margin-left: $space-xs;
       display: inline-flex;
       border-radius: 100px;
     }
