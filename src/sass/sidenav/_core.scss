@@ -65,6 +65,15 @@
       }
     }
   }
+
+  &-hidden {
+    left: -($sidebar-default-width + 2);
+    display: none;
+
+    .c-sidenav-body {
+      left: 0;
+    }
+  }
 }
 
 // .c-sidenav-menu-item-open {
@@ -73,7 +82,3 @@
 //   }
 // }
 
-
-.c-d-block {
-  display: block !important;
-}

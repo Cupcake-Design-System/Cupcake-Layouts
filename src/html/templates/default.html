@@ -3,7 +3,7 @@
 
 {{> head}}
 
-<body class="{{ body-class }}">
+<body class="{{ bodyClass }}">
 	{{> header}}
 	<div class="page-content">
 
@@ -14,13 +14,17 @@
 		{{#if secondarySidebar}}
 			{{> secondary-sidebar}}
 		{{/if}}
-	
+
 
 		<div class="content-wrapper">
 
 			{{#if pageHeader}}
 				{{> page-header}}
-			{{/if}}
+      {{/if}}
+
+      {{#if pageHeaderBar}}
+      {{> page-header-2}}
+    {{/if}}
 
 			<div class="content">
 				{{> body}}

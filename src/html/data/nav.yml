@@ -1,26 +1,31 @@
   -
-    title: Home
+    title: Default Options
     page: "index"
     url: /index.html
     icon: fas fa-home
   -
-    title: Sidenav Folded
-    page: "folded"
-    url: /folded.html
-    icon: fas fa-home
+    title: Secondary Options
+    page: "secondary-sidebar"
+    url: /secondary-sidebar.html
+    icon: fas fa-hand-peace
+  -
+    title: Header Only Nav
+    page: "header-only"
+    url: /header-only.html
+    icon: far fa-browser
   -
     title: Content Sidebars
     icon: far fa-window-restore
     class: c-sidenav-menu-item-open
     submenu:
       -
-        text: Left sidebar
-        page: "sidebar-content-left"
-        url: sidebar-content-left.html
+        text: Internal Left
+        page: "internal-left"
+        url: internal-left.html
       -
-        text: Right sidebar
-        page: "sidebar-content-right"
-        url: sidebar-content-right.html
+        text: Internal Right
+        page: "internal-right"
+        url: internal-right.html
   -
     title: Quickview
     page: "quickview"
@@ -30,4 +35,4 @@
     title: Page Headers
     page: "page-headers"
     url: /page-headers.html
-    icon: fas fa-arrow-alt-from-bottom
+    icon: fas fa-box-up
