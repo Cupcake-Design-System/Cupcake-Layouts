@@ -38,6 +38,7 @@
   font-weight: 600;
   color: $color-gray-7;
   margin: 0;
+  font-size: 24px;
 
   small {
     display: block;
@@ -75,7 +76,7 @@
 //
 .c-page-header-action {
   position: relative;
-  padding: 0 $space-lg;
+  padding: 0 $space-md;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
