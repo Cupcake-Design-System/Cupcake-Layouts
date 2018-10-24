@@ -2,8 +2,9 @@ var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var panini      = require('panini');
-
 var browserSync = require('browser-sync').create();
+var ghPages = require('gulp-gh-pages');
+
 
 var path = {
 	src:{
@@ -59,7 +60,10 @@ gulp.task('server', ['sass','html'], function() {
     gulp.watch( path.src.html + "data/**/*.{json,yml}",      ['html','panini.refresh','browserSync.reload']  );
 });
 
-
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 // Default gulp task to run
 gulp.task('default', function(){
