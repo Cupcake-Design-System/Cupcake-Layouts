@@ -4,12 +4,8 @@
     url: /index.html
     icon: fas fa-home
   -
-    title: Sidenav Folded
-    page: "folded"
-    url: /folded.html
-    icon: fas fa-home
-  -
     title: Content Sidebars
+    page: "users"
     icon: far fa-window-restore
     class: c-sidenav-menu-item-open
     submenu:
@@ -28,6 +24,24 @@
     icon: fas fa-eye
   -
     title: Page Headers
-    page: "page-headers"
+    page: "Page Headers"
     url: /page-headers.html
     icon: fas fa-arrow-alt-from-bottom
+  -
+    title: Menu Levels
+    icon: fas fa-layer-group
+    submenu:
+      -
+        text: Level 1
+        submenu2:
+            -
+                text: Level 2
+                url: thing
+                submenu3:
+                    -
+                        text: Level 3
+                        url: thing
+      -
+        text: Right sidebar
+        url: sidebar_content_right.html
+  -

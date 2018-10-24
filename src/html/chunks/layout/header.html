@@ -21,6 +21,7 @@
       </a>
     </div>
 
+    {{#if headerToggles}}
     <div class="main">
       <div class="c-header-item">
         <a href="#" class="c-header-item-link c-sidenav-user-toggle">
@@ -45,8 +46,8 @@
           <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-
     </div>
+    {{/if}}
 
     <div class="mobile">
       <div class="c-header-item">
@@ -69,6 +70,7 @@
   </div>
 
 
+  {{#if headerNav}}
   <div class="c-header-center">
     <div class="c-header-nav">
       <a class="c-header-nav-link c-header-nav-link-active" href="#">
@@ -88,7 +90,8 @@
         Admin
       </a>
     </div>
-  </div><!-- /.c-header-center -->
+  </div>
+  {{/if}}
 
   <div class="c-header-right">
     <div class="c-header-item">
