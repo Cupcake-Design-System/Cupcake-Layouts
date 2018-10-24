@@ -2,19 +2,19 @@
   {
      "title": "Default Options",
      "page": "index",
-     "url": "/index.html",
+     "url": "index.html",
      "icon": "fas fa-home"
   },
   {
      "title": "Secondary Options",
      "page": "secondary-sidebar",
-     "url": "/secondary-sidebar.html",
+     "url": "secondary-sidebar.html",
      "icon": "fas fa-hand-peace"
   },
   {
      "title": "Header Only Nav",
      "page": "header-only",
-     "url": "/header-only.html",
+     "url": "header-only.html",
      "icon": "far fa-browser"
   },
   {
@@ -37,13 +37,13 @@
   {
      "title": "Quickview",
      "page": "quickview",
-     "url": "/quickview.html",
+     "url": "quickview.html",
      "icon": "fas fa-eye"
   },
   {
      "title": "Page Headers",
      "page": "page-headers",
-     "url": "/page-headers.html",
+     "url": "page-headers.html",
      "icon": "fas fa-box-up"
   }
 ]
