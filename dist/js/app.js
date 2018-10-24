@@ -24,6 +24,20 @@ $(document).on('click', '.c-sidenav-user-toggle', function (e) {
 });
 
 
+// Toggle Dark sidebar
+$(document).on('click', '.c-sidenav-dark-toggle', function (e) {
+  e.preventDefault();
+  $('.c-sidenav-main').toggleClass('c-sidenav-dark');
+});
+
+// Hide sidebar
+$(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
+  e.preventDefault();
+  $('.c-sidenav-main').toggleClass('c-sidenav-hidden');
+});
+
+
+
 // Toggle secondary sidebar
 $(document).on('click', '.c-sidenav-secondary-toggle', function (e) {
     e.preventDefault();

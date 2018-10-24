@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js">
+
+{{> head}}
+
+<body class="{{ bodyClass }}">
+	{{> header}}
+	<div class="page-content">
+
+		{{#unless sidebarNone}}
+			{{> sidebar}}
+		{{/unless}}
+
+		{{#if secondarySidebar}}
+			{{> secondary-sidebar}}
+		{{/if}}
+
+
+		<div class="content-wrapper">
+
+			{{#if pageHeader}}
+				{{> page-header}}
+      {{/if}}
+
+      {{#if pageHeaderBar}}
+      {{> page-header-2}}
+    {{/if}}
+
+			<div class="content">
+				{{> body}}
+			</div>
+			{{> footer}}
+		</div>
+
+		{{#if rightSidebar}}
+			{{> right-sidebar}}
+		{{/if}}
+
+		{{#if quickview}}
+		{{> quickviews}}
+	{{/if}}
+
+		{{> scripts}}
+	</div>
+</body>
+
+</html>

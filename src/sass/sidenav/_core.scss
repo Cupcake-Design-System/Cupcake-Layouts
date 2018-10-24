@@ -65,4 +65,20 @@
       }
     }
   }
+
+  &-hidden {
+    left: -($sidebar-default-width + 2);
+    display: none;
+
+    .c-sidenav-body {
+      left: 0;
+    }
+  }
 }
+
+// .c-sidenav-menu-item-open {
+//   .c-sidenav-menu-submenu-group {
+//     display: block;
+//   }
+// }
+

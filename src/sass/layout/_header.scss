@@ -75,6 +75,7 @@
 /**** Header Navigation ****/
 .c-header-nav {
   // display: none;
+  display: flex;
 
   &-link {
     align-items: center;
@@ -84,11 +85,12 @@
     font-size: 0.75rem;
     font-weight: bold;
     padding: .5rem .75rem;
-    
-    &:not(:last-child) {
-      margin-right: 1.25rem;
-    }
-  
+    margin: .5rem;
+
+    // &:not(:last-child) {
+    //   margin-right: 1.25rem;
+    // }
+
     .c-header-nav-icon {
       font-size: 1rem;
       opacity: .25;
@@ -98,7 +100,7 @@
     &-active,
     &:hover {
       background-color: lighten($header-bg, 4);
-  
+
       .c-header-nav-icon {
         color: $color-primary;
         opacity: 1;
