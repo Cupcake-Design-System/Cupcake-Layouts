@@ -140,3 +140,15 @@
 .c-sidenav-menu-item-expanded > .c-sidenav-menu-submenu-group {
   display: block;
 }
+
+.c-sidenav-menu-item-open {
+  .c-sidenav-menu-submenu-group {
+    display: block;
+  }
+
+  .c-sidenav-menu-submenu {
+    .c-sidenav-menu-submenu-group {
+      display: none;
+    }
+  }
+}

@@ -21,6 +21,7 @@
      "title": "Content Sidebars",
      "icon": "far fa-window-restore",
      "class": "c-sidenav-menu-item-open",
+     "parent": true,
      "submenu": [
         {
            "text": "Internal Left",
@@ -45,5 +46,27 @@
      "page": "page-headers",
      "url": "page-headers.html",
      "icon": "fas fa-box-up"
+  },
+  {
+    "title": "Menu Levels",
+    "icon": "fas fa-layer-group",
+    "parent": true,
+    "submenu": [
+      {
+        "text": "Level 1",
+        "submenu2": [
+          {
+            "text": "Level 2",
+            "url": "thing",
+            "submenu3": [
+              {
+                "text": "Level 3",
+                "url": "thing"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
