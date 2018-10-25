@@ -14,7 +14,7 @@
   <!-- /global stylesheets -->
 </head>
 
-<body class="">
+<body class="c-sidenav-secondary-hidden">
 	<header class="c-header">
 	  <div class="c-header-left">
 	
@@ -152,13 +152,6 @@
 			
 			      </li>
 			      <li class="c-sidenav-menu-item ">
-			        <a href="secondary-sidebar.html" class="c-sidenav-menu-link ">
-			          <i class="fas fa-hand-peace"></i> <span>Secondary Options</span>
-			        </a>
-			
-			
-			      </li>
-			      <li class="c-sidenav-menu-item ">
 			        <a href="header-only.html" class="c-sidenav-menu-link ">
 			          <i class="far fa-browser"></i> <span>Header Only Nav</span>
 			        </a>
@@ -171,12 +164,12 @@
 			        </a>
 			
 			        <ul class="c-sidenav-menu-submenu-group" data-submenu-title="Content Sidebars">
-			          <li class="c-sidenav-menu-item ">
+			          <li class="c-sidenav-menu-item">
 			            <a href="internal-left.html" class="c-sidenav-menu-link ">Internal Left</a>
 			
 			
 			          </li>
-			          <li class="c-sidenav-menu-item ">
+			          <li class="c-sidenav-menu-item">
 			            <a href="internal-right.html" class="c-sidenav-menu-link ">Internal Right</a>
 			
 			
@@ -204,11 +197,11 @@
 			        </a>
 			
 			        <ul class="c-sidenav-menu-submenu-group" data-submenu-title="Menu Levels">
-			          <li class="c-sidenav-menu-item c-sidenav-menu-submenu ">
+			          <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
 			            <a href="" class="c-sidenav-menu-link ">Level 1</a>
 			
 			            <ul class="c-sidenav-menu-submenu-group">
-			              <li class="c-sidenav-menu-item c-sidenav-menu-submenu ">
+			              <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
 			                <a href="thing" class="c-sidenav-menu-link ">Level 2</a>
 			
 			                <ul class="c-sidenav-menu-submenu-group">
@@ -235,7 +228,97 @@
 			  </div>
 			</div>
 
-
+			<!-- Secondary sidebar -->
+			<div class="c-sidenav c-sidenav-secondary c-bg-gray-0">
+			
+			  <!-- Sidebar mobile toggler -->
+			  <div class="c-sidenav-mobile-toggler c-text-center">
+			    <a href="#" class="c-sidenav-mobile-secondary-toggle">
+			      <i class="far fa-arrow-to-left"></i>
+			    </a>
+			    <span class="font-weight-semibold">Secondary sidebar</span>
+			    <a href="#" class="c-sidenav-mobile-expand">
+			      <i class="far fa-expand-wide"></i>
+			      <i class="far fa-expand-alt"></i>
+			    </a>
+			  </div>
+			  <!-- /sidebar mobile toggler -->
+			
+			  <!-- Sidebar content -->
+			  <div class="c-sidenav-body">
+			
+			    <div class="c-media-list c-media-list-hover c-p-top-md">
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-envelope c-text-primary-7" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Inbox</div>
+			        </div>
+			        <span class="c-badge c-badge-primary c-badge-rounded">6</span>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-clock c-text-warning-7" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Snoozed</div>
+			        </div>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fa fa-check c-text-success-7" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Done</div>
+			        </div>
+			        <span class="c-badge c-badge-success c-badge-rounded">10</span>
+			      </div>
+			
+			    </div>
+			
+			    <hr class="c-hr">
+			
+			    <div class="c-media-list c-media-list-hover">
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-envelope-open c-text-gray-6" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Drafts</div>
+			        </div>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-paper-plane c-text-gray-6" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Sent</div>
+			        </div>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-bell c-text-gray-6" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Reminders</div>
+			        </div>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-trash c-text-gray-6" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Trash</div>
+			        </div>
+			      </div>
+			
+			      <div class="c-media c-media-middle">
+			        <i class="fal fa-user c-text-gray-6" aria-hidden="true"></i>
+			        <div class="c-media-body">
+			          <div class="c-text-md">Contacts</div>
+			        </div>
+			      </div>
+			    </div>
+			    <hr class="c-hr">
+			
+			  </div>
+			  <!-- /sidebar content -->
+			
+			</div>
+			<!-- /secondary sidebar -->
 
 		<div class="content-wrapper">
 
@@ -253,45 +336,24 @@
 				
 				<div class="c-card">
 				  <div class="c-card-content">
-				    <h3>Toggle between folded and normal width of the main sidebar</h3>
-				    <br>
-				    <button class="c-btn c-btn-sm c-btn-primary c-sidenav-main-toggle">
-				      Toggle Main Sidebar Fold
-				    </button>
+				    <h3>Below this is just dummy text.</h3>
+				    <p>I love Halloween. The one time of year when everyone wears a mask … not just me. Rorschach would say you have
+				      a hard time relating to others. I think he's got a crush on you, Dex! Pretend. You pretend the feelings are
+				      there, for the world, for the people around you. Who knows? Maybe one day they will be.</p>
+				    <ol>
+				      <li>I'm not the monster he wants me to be. So I'm neither man nor beast. I'm something new entirely. With my
+				        own set of rules. I'm Dexter. Boo.</li>
+				      <li>I feel like a jigsaw puzzle missing a piece. And I'm not even sure what the picture should be.</li>
+				      <li>I'm Dexter, and I'm not sure what I am.</li>
+				    </ol>
 				
-				    <br>
-				    <hr class="c-hr">
-				    <br>
-				    <h3>Hide the main sidebar completely</h3>
-				    <br>
-				    <button class="c-btn c-btn-sm c-btn-primary c-sidenav-hidden-toggle">
-				        Toggle Main Sidebar Visibility
-				      </button>
-				
-				
-				    <br>
-				    <hr class="c-hr">
-				    <br>
-				    <h3>Toggle the user profile in main sidebar</h3>
-				
-				    <br>
-				    <button class="c-btn c-btn-sm c-btn-primary c-sidenav-user-toggle">
-				      Toggle Main Sidebar User
-				    </button>
-				
-				    <br>
-				    <hr class="c-hr">
-				    <br>
-				    <h3>Toggle the dark style main sidebar</h3>
-				
-				    <br>
-				    <button class="c-btn c-btn-sm c-btn-primary c-sidenav-dark-toggle">
-				      Toggle Dark Sidebar
-				    </button>
-				
-				
-				    <br>
-				    <br>
+				    <h4>This man is a knight in shining armor.</h4>
+				    <p>You look…perfect. I like seafood. I think he's got a crush on you, Dex! I am not a killer.</p>
+				    <ul>
+				      <li>You're a killer. I catch killers.</li>
+				      <li>I'm really more an apartment person.</li>
+				      <li>Tell him time is of the essence.</li>
+				    </ul>
 				
 				  </div>
 				</div>
@@ -315,7 +377,156 @@
 			</div>
 		</div>
 
+			<!-- Right sidebar -->
+			<div class="c-sidenav c-sidenav-right">
+			
+			  <!-- Sidebar mobile toggler -->
+			  <div class="c-sidenav-mobile-toggler c-text-center">
+			    <a href="#" class="c-sidenav-mobile-expand">
+			      <i class="far fa-expand-wide"></i>
+			      <i class="far fa-expand-alt"></i>
+			    </a>
+			    <span class="font-weight-semibold">Right sidebar</span>
+			    <a href="#" class="c-sidenav-mobile-right-toggle">
+			      <i class="far fa-arrow-to-right"></i>
+			    </a>
+			  </div>
+			  <!-- /sidebar mobile toggler -->
+			
+			  <!-- Sidebar content -->
+			  <div class="c-sidenav-body">
+			
+			    <ul class="c-sidenav-menu" data-nav-type="accordion">
+			      <li class="c-sidenav-menu-category">Category title</li>
+			      <li class="c-sidenav-menu-item">
+			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-university"></i> Link</a>
+			      </li>
+			      <li class="c-sidenav-menu-item">
+			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-hospital"></i> Another link</a>
+			      </li>
+			      <li class="c-sidenav-menu-item">
+			        <a href="#" class="c-sidenav-menu-link">
+			          <i class="fas fa-user-astronaut"></i>
+			          Link with badge
+			          <span class="badge bg-primary badge-pill ml-auto">2</span>
+			        </a>
+			      </li>
+			      <li class="c-sidenav-divider"></li>
+			      <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
+			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-layer-group"></i> Menu levels</a>
+			        <ul class="c-sidenav-menu-submenu-group" style="display: none;">
+			          <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
+			          <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
+			            <a href="#" class="c-sidenav-menu-link">Second level with child</a>
+			            <ul class="c-sidenav-menu-submenu-group" style="display: block;">
+			              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
+			              <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
+			                <a href="#" class="c-sidenav-menu-link">Third level with child</a>
+			                <ul class="c-sidenav-menu-submenu-group" style="display: block;">
+			                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
+			                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
+			                </ul>
+			              </li>
+			              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
+			            </ul>
+			          </li>
+			          <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+			
+			  </div>
+			  <!-- /sidebar content -->
+			
+			</div>
+			<!-- /right sidebar -->
 
+    <div id="themes" class="c-quickview">
+        <div class="settings-ctrl" id="themes-trigger">
+            <i class="fa fa-cog"></i>
+          </div>
+    
+      <header class="c-quickview-header">
+          <div class="c-text-lg c-text-bold c-quickview-title">Main Sidebar Options</div>
+        </header>
+    
+    
+      <div class="c-quickview-body">
+    
+        <div class="c-media-list">
+          <div class="c-media c-media-middle c-media-action-visible">
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Fold Sidebar</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Only display icons in the sidebar</div>
+            </div>
+            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-main-toggle">
+              <span class="fas fa-check"></span>
+            </button>
+          </div>
+    
+          <div class="c-media c-media-middle c-media-action-visible">
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Toggle Sidebar</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Hide the sidebar completely</div>
+            </div>
+            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-hidden-toggle">
+              <span class="fas fa-check"></span>
+            </button>
+          </div>
+    
+          <div class="c-media c-media-middle c-media-action-visible">
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Toggle User</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Remove the user section from the sidebar</div>
+            </div>
+            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-user-toggle">
+              <span class="fas fa-user"></span>
+            </button>
+          </div>
+    
+          <div class="c-media c-media-middle c-media-action-visible">
+              <div class="c-media-body">
+                <div class="c-text-md c-text-bold">Toggle Dark Nav</div>
+                <div class="c-text-sm c-text-muted c-p-top-xs">WIP: Dark Side-Nav</div>
+              </div>
+              <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-dark-toggle">
+                <span class="fas fa-user"></span>
+              </button>
+            </div>
+    
+    
+    
+        </div>
+    
+        <header class="c-quickview-header">
+            <div class="c-text-lg c-text-bold c-quickview-title">Secondary Sidebar Options</div>
+          </header>
+          <div class="c-media-list">
+              <div class="c-media c-media-middle c-media-action-visible">
+                <div class="c-media-body">
+                  <div class="c-text-md c-text-bold">Toggle Left Sidebar</div>
+                  <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary left sidebar</div>
+                </div>
+                <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-secondary-toggle">
+                  <span class="fas fa-check"></span>
+                </button>
+              </div>
+    
+              <div class="c-media c-media-middle c-media-action-visible">
+                  <div class="c-media-body">
+                    <div class="c-text-md c-text-bold">Toggle Right Sidebar</div>
+                    <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary right sidebar</div>
+                  </div>
+                  <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-right-toggle">
+                    <span class="fas fa-check"></span>
+                  </button>
+                </div>
+    
+    
+            </div>
+      </div>
+    
+    </div>
 
 		<script src="./js/jquery.min.js"></script>
 		<script src="./js/app.js"></script>

@@ -31,7 +31,7 @@ gulp.task('html', function(){
 		.pipe(panini({
 		  root:     path.src.html + 'pages/',
 		  layouts:  path.src.html + 'templates/',
-		  partials: path.src.html + 'chunks/',
+		  partials: path.src.html + 'layout/',
 		  data:     path.src.html + 'data/',
 		  helpers:  path.src.html + 'helpers/'
 		}))
