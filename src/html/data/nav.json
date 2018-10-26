@@ -6,12 +6,6 @@
      "icon": "fas fa-home"
   },
   {
-     "title": "Secondary Options",
-     "page": "secondary-sidebar",
-     "url": "secondary-sidebar.html",
-     "icon": "fas fa-hand-peace"
-  },
-  {
      "title": "Header Only Nav",
      "page": "header-only",
      "url": "header-only.html",
@@ -21,7 +15,6 @@
      "title": "Content Sidebars",
      "icon": "far fa-window-restore",
      "class": "c-sidenav-menu-item-open",
-     "parent": true,
      "submenu": [
         {
            "text": "Internal Left",
@@ -50,18 +43,17 @@
   {
     "title": "Menu Levels",
     "icon": "fas fa-layer-group",
-    "parent": true,
     "submenu": [
       {
         "text": "Level 1",
         "submenu2": [
           {
             "text": "Level 2",
-            "url": "thing",
+            "url": "",
             "submenu3": [
               {
                 "text": "Level 3",
-                "url": "thing"
+                "url": ""
               }
             ]
           }

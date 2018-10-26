@@ -68,7 +68,7 @@
       </li>
 
     {{#each nav}}
-      <li class="c-sidenav-menu-item{{#if submenu}} c-sidenav-menu-submenu{{/if}} {{#if parent}}{{class}}{{/if}}">
+      <li class="c-sidenav-menu-item{{#if submenu}} c-sidenav-menu-submenu{{/if}} {{class}}">
         <a href="{{url}}" class="c-sidenav-menu-link {{#ifpage page}}c-sidenav-menu-link-active{{/ifpage}}">
           <i class="{{icon}}"></i> <span>{{title}}</span>
         </a>
@@ -76,13 +76,13 @@
         {{#if submenu}}
         <ul class="c-sidenav-menu-submenu-group" data-submenu-title="{{title}}">
           {{#each submenu}}
-          <li class="c-sidenav-menu-item{{#if submenu2}} c-sidenav-menu-submenu{{/if}} {{class}}">
+          <li class="c-sidenav-menu-item{{#if submenu2}} c-sidenav-menu-submenu{{/if}}">
             <a href="{{url}}" class="c-sidenav-menu-link {{#ifpage page}}c-sidenav-menu-link-active{{/ifpage}}">{{text}}</a>
 
             {{#if submenu2}}
             <ul class="c-sidenav-menu-submenu-group">
               {{#each submenu2}}
-              <li class="c-sidenav-menu-item{{#if submenu3}} c-sidenav-menu-submenu{{/if}} {{class}}">
+              <li class="c-sidenav-menu-item{{#if submenu3}} c-sidenav-menu-submenu{{/if}}">
                 <a href="{{url}}" class="c-sidenav-menu-link {{#ifpage page}}c-sidenav-menu-link-active{{/ifpage}}">{{text}}</a>
 
                 {{#if submenu3}}

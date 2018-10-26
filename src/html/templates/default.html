@@ -38,7 +38,11 @@
 
 		{{#if quickview}}
 		{{> quickviews}}
-	{{/if}}
+  {{/if}}
+
+  {{#unless optionsOff}}
+    {{> themes}}
+    {{/unless}}
 
 		{{> scripts}}
 	</div>

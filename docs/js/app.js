@@ -227,6 +227,10 @@ $(document).on('click', '.c-sidenav-user-dropdown', function (e) {
   $(this).toggleClass('c-d-flex');
 });
 
+$("#themes-trigger").on("click", function () {
+  $("#themes").toggleClass("reveal");
+  $("#backdrop-main").toggle()
+});
 
 // Quickview Stuff
 $(".c-quickview-close").on("click", function () {
@@ -293,3 +297,4 @@ $("#dark-close").on("click", function () {
 $("#fab").click(function(){
   $(this).toggleClass("active");
 });
+
