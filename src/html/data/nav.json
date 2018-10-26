@@ -49,11 +49,11 @@
         "submenu2": [
           {
             "text": "Level 2",
-            "url": "thing",
+            "url": "",
             "submenu3": [
               {
                 "text": "Level 3",
-                "url": "thing"
+                "url": ""
               }
             ]
           }
