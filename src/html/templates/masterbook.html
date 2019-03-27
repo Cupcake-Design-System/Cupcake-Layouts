@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js">
+
+{{> head}}
+
+<body class="{{ bodyClass }}">
+	{{> header}}
+	<div class="page-content">
+
+		{{#unless sidebarNone}}
+			{{> sidebar-masterbook}}
+		{{/unless}}
+
+		{{#if secondarySidebar}}
+			{{> secondary-sidebar}}
+		{{/if}}
+
+
+		<div class="content-wrapper">
+
+      <header class="c-page-header">
+        <div class="c-page-header-bar">
+            <ul class="c-breadcrumb">
+                <li class="c-breadcrumb-item"><a class="c-a" href="#"> Dashboard</a></li>
+                <li class="c-breadcrumb-item"><a class="c-a" href="#"> Deal Monitor</a></li>
+                <li class="c-breadcrumb-item"><a class="c-a" href="#"> My Deals</a></li>
+                <li class="c-breadcrumb-item c-breadcrumb-item-active"> 2 Broadway, LLC</li>
+              </ul>
+              <a href="" class="c-sidenav-right-toggle c-text-primary">
+                  <i class="fas fa-arrow-circle-left"></i>
+              </a>
+
+        </div>
+
+        <div class="c-page-header-action">
+				    <ul class="c-tabs">
+				      <li class="c-tab-item"><a class="c-tab-item-link" href="#">Dashboard</a></li>
+				      <li class="c-tab-item"><a class="c-tab-item-link c-tab-item-link-active" href="#">Masterbook</a></li>
+				      <li class="c-tab-item"><a class="c-tab-item-link" href="#">Issuelaunch</a></li>
+				    </ul>
+				  </div>
+      </header>
+
+      {{#if pageHeaderBar}}
+      {{> page-header-2}}
+    {{/if}}
+
+			<div class="content">
+				{{> body}}
+			</div>
+			{{> footer}}
+		</div>
+
+<!-- Secondary sidebar -->
+<div class="c-sidenav c-sidenav-right" style="width: 300px;">
+
+    <!-- Sidebar mobile toggler -->
+    <div class="c-sidenav-mobile-toggler c-text-center">
+      <a href="#" class="c-sidenav-mobile-secondary-toggle">
+        <i class="far fa-arrow-to-left"></i>
+      </a>
+      <span class="font-weight-semibold">Secondary sidebar</span>
+      <a href="#" class="c-sidenav-mobile-expand">
+        <i class="far fa-expand-wide"></i>
+        <i class="far fa-expand-alt"></i>
+      </a>
+    </div>
+    <!-- /sidebar mobile toggler -->
+
+    <!-- Sidebar content -->
+    <div class="c-sidenav-body">
+
+      <div class="c-media-list">
+
+          <div class="c-media c-media-middle c-bg-primary-9">
+
+              <div class="c-media-body">
+                <div class="c-text-lg c-text-white c-text-bold">Manage Book</div>
+              </div>
+              <i class="fas fa-external-link-square-alt c-text-primary-2" aria-hidden="true"></i>
+              <a href="" class="fas fa-times c-text-primary-2 c-sidenav-right-toggle" aria-hidden="true"></a>
+          </div>
+
+      </div>
+      <ul class="c-sidenav-menu" data-nav-type="accordion">
+      <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
+        <a href="#" class="c-sidenav-menu-link c-text-bold">Overview</a>
+        <ul class="c-sidenav-menu-submenu-group c-p-md" style="display: none;">
+            <h4>This man is a knight in shining armor.</h4>
+            <p>You look…perfect. I like seafood. I think he's got a crush on you, Dex! I am not a killer.</p>
+            <ul>
+              <li>You're a killer. I catch killers.</li>
+              <li>I'm really more an apartment person.</li>
+              <li>Tell him time is of the essence.</li>
+            </ul>
+        </ul>
+      </li>
+      <li class="c-sidenav-divider c-m-0"></li>
+      <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
+          <a href="#" class="c-sidenav-menu-link c-text-bold">Demand by Limit</a>
+          <ul class="c-sidenav-menu-submenu-group c-p-md" style="display: none;">
+            <h4>This man is a knight in shining armor.</h4>
+            <p>You look…perfect. I like seafood. I think he's got a crush on you, Dex! I am not a killer.</p>
+            <ul>
+              <li>You're a killer. I catch killers.</li>
+              <li>I'm really more an apartment person.</li>
+              <li>Tell him time is of the essence.</li>
+            </ul>
+        </ul>
+        </li>
+        <li class="c-sidenav-divider c-m-0"></li>
+    </ul>
+    </div>
+    <!-- /sidebar content -->
+
+  </div>
+  <!-- /secondary sidebar -->
+
+		{{#if quickview}}
+		{{> quickviews}}
+  {{/if}}
+
+  {{#unless optionsOff}}
+    {{> themes}}
+    {{/unless}}
+
+		{{> scripts}}
+	</div>
+</body>
+
+</html>

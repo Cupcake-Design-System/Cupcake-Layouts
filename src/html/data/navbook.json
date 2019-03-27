@@ -1,0 +1,42 @@
+[
+  {
+     "title": "Home",
+     "page": "masterbook",
+     "url": "masterbook.html",
+     "icon": "fas fa-home"
+  },
+  {
+     "title": "Header Only Nav",
+     "page": "header-only",
+     "url": "",
+     "icon": "fas fa-balance-scale"
+  },
+  {
+     "title": "Content Sidebars",
+     "icon": "fas fa-bolt"
+  },
+  {
+     "title": "Quickview",
+     "page": "quickview",
+     "url": "quickview.html",
+     "icon": "fas fa-calendar-alt"
+  },
+  {
+     "title": "Page Headers",
+     "page": "page-headers",
+     "url": "page-headers.html",
+     "icon": "fas fa-list-alt"
+  },
+  {
+    "title": "Page Headers",
+    "page": "page-headers",
+    "url": "page-headers.html",
+    "icon": "fas fa-shield-alt"
+ },
+  {
+    "title": "Page Headers",
+    "page": "page-headers",
+    "url": "page-headers.html",
+    "icon": "fas fa-truck"
+  }
+]

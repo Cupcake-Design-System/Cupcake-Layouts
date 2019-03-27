@@ -9,11 +9,11 @@
   .c-sidenav-menu-item {
     &:not(.c-sidenav-menu-category) {
       &:first-child {
-        padding-top: $space-sm;
+        // padding-top: $space-sm;
       }
 
       &:last-child {
-        padding-bottom: $space-sm;
+        // padding-bottom: $space-sm;
       }
     }
   }
@@ -34,9 +34,11 @@
     position: relative;
     display: flex;
     align-items: flex-start;
+    margin: $sidebar-link-margin;
     padding: $sidebar-link-padding;
     line-height: $sidebar-link-line-height;
     color: $sidebar-link-color;
+    border-radius: 2px;
     transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
 
     i {
@@ -48,6 +50,10 @@
     &:hover {
       color: $sidebar-link-hover-color;
       background-color: $sidebar-link-hover-bg;
+
+      i {
+        color: $sidebar-link-icon-color-active;
+      }
     }
 
     &-active {
