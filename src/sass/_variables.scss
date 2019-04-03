@@ -15,7 +15,8 @@ $border-color                       : $color-gray-3;
 $img-path                           : url('../images/bg9.png') !default;
 $font-family-base                   : $font-family-sans;
 
-
+$active-bg       : $color-primary-0;
+$active-color       : $color-primary-8;
 // --------------------------------------------
 // Sidebar ------------------------------------
 // --------------------------------------------
@@ -25,9 +26,10 @@ $sidebar-default-font-size          : 14px;
 $sidebar-default-bg-color           : $color-white;
 $sidebar-default-color              : $color-gray-8;
 $sidebar-default-border             : 1px solid $border-color;
-$sidebar-default-hover-bg           : $color-gray-1;
+$sidebar-default-hover-bg           : $active-bg;
 $sidebar-default-active-color       : $color-primary-8;
 $sidebar-divider-default-color      : $border-color;
+
 
 // Menu Links
 $sidebar-link-padding               : $space-sm $space-md !default;
@@ -35,10 +37,10 @@ $sidebar-link-line-height           : $space-xl !default;
 $sidebar-link-color                 : $sidebar-default-color !default;
 $sidebar-link-hover-color           : $sidebar-default-color !default;
 $sidebar-link-hover-bg              : $sidebar-default-hover-bg !default;
-$sidebar-link-active-bg             : $color-gray-1 !default;
-$sidebar-link-active-color          : $sidebar-default-color !default;
-$sidebar-link-open-bg               : $sidebar-default-hover-bg !default;
-$sidebar-link-open-color            : $sidebar-default-color !default;
+$sidebar-link-active-bg             : $active-bg !default;
+$sidebar-link-active-color          : $active-color !default;
+$sidebar-link-open-bg               : $active-bg !default;
+$sidebar-link-open-color            : $active-color !default;
 
 // Icon
 $sidebar-link-icon-margin           : $space-sm $space-md $space-sm 0 !default;

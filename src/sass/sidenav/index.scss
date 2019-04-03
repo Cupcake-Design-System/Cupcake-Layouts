@@ -11,18 +11,6 @@
     .c-sidenav-mobile-toggler {
       display: none;
     }
-
-
-    &:not(.c-sidenav-component) {
-      position: static;
-      transition: none;
-
-      &:not(.c-sidenav-fixed) .c-sidenav-body {
-        position: static;
-        overflow: visible;
-        width: auto;
-      }
-    }
   }
 
   .c-sidenav-main-hidden .c-sidenav.c-sidenav-main {
@@ -87,5 +75,26 @@
       right: 0;
       left: auto;
     }
+  }
+}
+
+
+.c-sidenav-collapse {
+  display: flex;
+  height: $footer-height;
+  background: #f8f9fa;
+  color: #868e96;
+  border-top: 1px solid #e9ecef;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  width: $sidebar-default-width;
+
+  .c-sidenav-folded & {
+    width: $sidebar-folded-default-width;
   }
 }

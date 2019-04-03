@@ -2,6 +2,7 @@
 // Sidebars Desktop ----------------------------
 // --------------------------------------------
 
+
 // Toggle min sidebar class
 $('.c-sidenav-main-toggle').on('click', function (e) {
   e.preventDefault();
@@ -11,27 +12,27 @@ $('.c-sidenav-main-toggle').on('click', function (e) {
 
 
 // Toggle main sidebar
-$(document).on('click', '.c-sidenav-main-hide', function (e) {
+$('.c-sidenav-main-hide').on('click', function (e) {
     e.preventDefault();
     $('body').toggleClass('c-sidenav-main-hidden');
 });
 
 
 // Toggle User in sidebar
-$(document).on('click', '.c-sidenav-user-toggle', function (e) {
+$('.c-sidenav-user-toggle').on('click', function (e) {
     e.preventDefault();
     $('body').toggleClass('c-sidenav-user-hidden');
 });
 
 
 // Toggle Dark sidebar
-$(document).on('click', '.c-sidenav-dark-toggle', function (e) {
+$('.c-sidenav-dark-toggle').on('click', function (e) {
   e.preventDefault();
   $('.c-sidenav-main').toggleClass('c-sidenav-dark');
 });
 
 // Hide sidebar
-$(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
+$('.c-sidenav-hidden-toggle').on('click', function (e) {
   e.preventDefault();
   $('.c-sidenav-main').toggleClass('c-sidenav-hidden');
 });
@@ -39,14 +40,14 @@ $(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
 
 
 // Toggle secondary sidebar
-$(document).on('click', '.c-sidenav-secondary-toggle', function (e) {
+$('.c-sidenav-secondary-toggle').on('click', function (e) {
     e.preventDefault();
     $('body').toggleClass('c-sidenav-secondary-hidden');
 });
 
 
 // Show right, resize main
-$(document).on('click', '.c-sidenav-right-main-toggle', function (e) {
+$('.c-sidenav-right-main-toggle').on('click', function (e) {
     e.preventDefault();
 
     // Right sidebar visibility
@@ -68,7 +69,7 @@ $(document).on('click', '.c-sidenav-right-main-toggle', function (e) {
 
 
 // Show right, hide main
-$(document).on('click', '.c-sidenav-right-main-hide', function (e) {
+$('.c-sidenav-right-main-hide').on('click', function (e) {
     e.preventDefault();
 
     // Opposite sidebar visibility
@@ -85,7 +86,7 @@ $(document).on('click', '.c-sidenav-right-main-hide', function (e) {
 
 
 // Toggle right sidebar
-$(document).on('click', '.c-sidenav-right-toggle', function (e) {
+$('.c-sidenav-right-toggle').on('click', function (e) {
     e.preventDefault();
 
     $('body').toggleClass('c-sidenav-right-visible');
@@ -93,7 +94,7 @@ $(document).on('click', '.c-sidenav-right-toggle', function (e) {
 
 
 // Show right, hide secondary
-$(document).on('click', '.c-sidenav-right-secondary-toggle', function (e) {
+$('.c-sidenav-right-secondary-toggle').on('click', function (e) {
     e.preventDefault();
 
     // Opposite sidebar visibility
@@ -110,7 +111,7 @@ $(document).on('click', '.c-sidenav-right-secondary-toggle', function (e) {
 
 
 // Toggle content sidebar
-$(document).on('click', '.c-sidenav-component-toggle', function (e) {
+$('.c-sidenav-component-toggle').on('click', function (e) {
     e.preventDefault();
     $('body').toggleClass('c-sidenav-component-hidden');
 });
@@ -186,33 +187,45 @@ $('.c-sidenav-mobile-component-toggle').on('click', function (e) {
 var navClass = 'c-sidenav-menu',
     navItemClass = 'c-sidenav-menu-item',
     navItemOpenClass = 'c-sidenav-menu-item-open',
+    navItemActiveClass = 'c-sidenav-menu-link-active',
     navLinkClass = 'c-sidenav-menu-link',
     navSubmenuClass = 'c-sidenav-menu-submenu-group',
     navSlidingSpeed = 250;
+    currentUrl = document.URL;
+    currentUrlEnd = currentUrl.split('/').filter(Boolean).pop();
+
+    // Set active based on url
+    $(navLinkClass).each(function () {
+      var url = $(this).attr('href');
+      var urlEnd = url.split('/').filter(Boolean).pop();
+      if (urlEnd == currentUrlEnd)
+        $(this).addClass(navItemActiveClass)
+    });
+
 
     // Configure collapsible functionality
-    $('.' + navClass).each(function() {
-        $(this).find('.' + navItemClass).has('.' + navSubmenuClass).children('.' + navItemClass + ' > ' + '.' + navLinkClass).not('.disabled').on('click', function (e) {
-            e.preventDefault();
+  $('.' + navClass).each(function() {
+      $(this).find('.' + navItemClass).has('.' + navSubmenuClass).children('.' + navItemClass + ' > ' + '.' + navLinkClass).not('.disabled').on('click', function (e) {
+          e.preventDefault();
 
-            // Simplify stuff
-            var $target = $(this),
-                $navSidebarMini = $('.c-sidenav-folded').not('.c-sidenav-mobile-main').find('.c-sidenav-main .' + navClass).children('.' + navItemClass);
+          // Simplify stuff
+          var $target = $(this),
+              $navSidebarMini = $('.c-sidenav-folded').not('.c-sidenav-mobile-main').find('.c-sidenav-main .' + navClass).children('.' + navItemClass);
 
-            // Collapsible
-            if($target.parent('.' + navItemClass).hasClass(navItemOpenClass)) {
-                $target.parent('.' + navItemClass).not($navSidebarMini).removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
-            }
-            else {
-                $target.parent('.' + navItemClass).not($navSidebarMini).addClass(navItemOpenClass).children('.' + navSubmenuClass).slideDown(navSlidingSpeed);
-            }
+          // Collapsible
+          if($target.parent('.' + navItemClass).hasClass(navItemOpenClass)) {
+              $target.parent('.' + navItemClass).not($navSidebarMini).removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
+          }
+          else {
+              $target.parent('.' + navItemClass).not($navSidebarMini).addClass(navItemOpenClass).children('.' + navSubmenuClass).slideDown(navSlidingSpeed);
+          }
 
-            // Accordion
-            if ($target.parents('.' + navClass).data('nav-type') == 'accordion') {
-                $target.parent('.' + navItemClass).not($navSidebarMini).siblings(':has(.' + navSubmenuClass + ')').removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
-            }
-        });
-    });
+          // Accordion
+          if ($target.parents('.' + navClass).data('nav-type') == 'accordion') {
+              $target.parent('.' + navItemClass).not($navSidebarMini).siblings(':has(.' + navSubmenuClass + ')').removeClass(navItemOpenClass).children('.' + navSubmenuClass).slideUp(navSlidingSpeed);
+          }
+      });
+  });
 
 
 
@@ -221,7 +234,7 @@ var navClass = 'c-sidenav-menu',
 // --------------------------------------------
 
 // Toggle Dropdown
-$(document).on('click', '.c-sidenav-user-dropdown', function (e) {
+$('.c-sidenav-user-dropdown').on('click', function (e) {
   e.preventDefault();
   $('#user-nav').toggleClass('c-d-flex');
   $(this).toggleClass('c-d-flex');

@@ -12,21 +12,16 @@
      "icon": "far fa-browser"
   },
   {
-     "title": "Content Sidebars",
-     "icon": "far fa-window-restore",
-     "class": "c-sidenav-menu-item-open",
-     "submenu": [
-        {
-           "text": "Internal Left",
-           "page": "internal-left",
-           "url": "internal-left.html"
-        },
-        {
-           "text": "Internal Right",
-           "page": "internal-right",
-           "url": "internal-right.html"
-        }
-     ]
+    "title": "Content Sidebar Left",
+    "page": "internal-left",
+    "url": "internal-left.html",
+    "icon": "far fa-window-restore"
+  },
+  {
+    "title": "Content Sidebar Right",
+    "page": "internal-right",
+    "url": "internal-right.html",
+    "icon": "far fa-window-restore"
   },
   {
      "title": "Quickview",

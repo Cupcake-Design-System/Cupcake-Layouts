@@ -3,7 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin: 0;
+  margin: 4px;
+  margin-bottom: 48px;
   list-style: none;
 
   .c-sidenav-menu-item {
@@ -20,7 +21,7 @@
 
   > {
     .c-sidenav-menu-item > .c-sidenav-menu-link {
-      font-weight: 500;
+      // font-weight: 500;
 
       // if we need custom top level active color
       // &-active {

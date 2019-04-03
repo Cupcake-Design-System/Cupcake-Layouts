@@ -20,8 +20,10 @@
   .c-sidenav-main {
     width: $sidebar-folded-default-width;
 
-    .c-sidenav-body::-webkit-scrollbar {
-      width: 0 !important;
+    .c-sidenav-body {
+      position: static;
+      overflow: visible;
+      width: auto;
     }
 
     .c-sidenav-menu {

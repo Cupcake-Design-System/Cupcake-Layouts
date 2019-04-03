@@ -1,24 +1,26 @@
 .c-sidenav {
-  flex: 0 0 auto;
+  top: 0;
+  bottom: 0;
   z-index: 1040;
+  flex: 0 0 auto;
+  transition: none;
+  box-sizing: content-box;
+  background-clip: content-box;
   width: $sidebar-default-width;
-  background-color: $sidebar-default-bg-color;
   color: $sidebar-default-color;
   border-right: $sidebar-default-border;
   font-size: $sidebar-default-font-size;
-  background-clip: content-box;
-  position: static;
-  transition: none;
-  top: 0;
-  bottom: 0;
-  box-sizing: content-box;
+  font-weight: bold;
+  background-color: $sidebar-default-bg-color;
 
   &-body {
-    position: static;
-    top: $header-height;
     bottom: 0;
+    flex: 1 1 0%;
     width: inherit;
-    overflow-y: auto;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    top: $header-height;
+    height: calc(100vh - 48px);
     transition: left ease-in-out 0.15s, right ease-in-out 0.15s;
   }
 
