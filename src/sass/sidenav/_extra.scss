@@ -12,6 +12,7 @@
     .c-sidenav-body {
       top: 0;
       position: relative;
+      margin-bottom: 0;
     }
 
     // Left alignment
@@ -47,4 +48,24 @@
   height: 1px;
   margin: $space-sm 0;
   background-color: $sidebar-divider-default-color;
+}
+
+.c-sidenav-collapse {
+  bottom: 0;
+  height: 40px;
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  color: #868e96;
+  padding: 10px 20px;
+  align-items: center;
+  background: #f8f9fa;
+  justify-content: flex-end;
+  width: $sidebar-default-width;
+  border-top: 1px solid #e9ecef;
+
+  &:hover {
+    background-color: #f1f3f5
+  }
 }

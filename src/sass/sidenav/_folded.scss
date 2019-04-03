@@ -142,4 +142,8 @@
       bottom: 0;
     }
   }
+
+  .c-sidenav-collapse {
+    width: $sidebar-folded-default-width;
+  }
 }

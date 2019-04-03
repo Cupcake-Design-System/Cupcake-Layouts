@@ -20,7 +20,7 @@
 
   > {
     .c-sidenav-menu-item > .c-sidenav-menu-link {
-      font-weight: 500;
+      font-weight: bold;
 
       // if we need custom top level active color
       // &-active {
@@ -31,14 +31,14 @@
   }
 
   .c-sidenav-menu-link {
-    position: relative;
     display: flex;
+    position: relative;
     align-items: flex-start;
+    border-radius: $radius-sm;
+    color: $sidebar-link-color;
     margin: $sidebar-link-margin;
     padding: $sidebar-link-padding;
     line-height: $sidebar-link-line-height;
-    color: $sidebar-link-color;
-    border-radius: 2px;
     transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
 
     i {
