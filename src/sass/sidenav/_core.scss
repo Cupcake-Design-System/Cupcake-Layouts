@@ -3,7 +3,6 @@
   bottom: 0;
   z-index: 1040;
   flex: 0 0 auto;
-  position: static;
   transition: none;
   box-sizing: content-box;
   background-clip: content-box;
@@ -11,14 +10,19 @@
   color: $sidebar-default-color;
   border-right: $sidebar-default-border;
   font-size: $sidebar-default-font-size;
+  font-weight: bold;
   background-color: $sidebar-default-bg-color;
 
   &-body {
     bottom: 0;
+    flex: 1 1 0%;
     width: inherit;
     overflow-y: auto;
-    position: static;
+    overflow-x: hidden;
     top: $header-height;
+    // height: calc(100vh - 48px);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
     transition: left ease-in-out 0.15s, right ease-in-out 0.15s;
   }
 
@@ -41,11 +45,11 @@
   }
 
   &-right {
-    z-index: 97;
-    display: none;
-    border-right: 0;
     right: -($sidebar-default-width);
     border-left: $sidebar-default-border;
+    display: none;
+    z-index: 97;
+    border-right: 0;
 
     .c-sidenav-body {
       right: 0;

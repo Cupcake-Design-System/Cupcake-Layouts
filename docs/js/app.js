@@ -11,10 +11,19 @@ $('.c-sidenav-main-toggle').on('click', function (e) {
 
 
 // Toggle main sidebar
-$(document).on('click', '.c-sidenav-main-hide', function (e) {
+$(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
     e.preventDefault();
     $('body').toggleClass('c-sidenav-main-hidden');
 });
+
+
+// Toggle hidden sidebar class
+$('.c-layout-fixed-toggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('body').toggleClass('c-layout-fixed');
+});
+
 
 
 // Toggle User in sidebar

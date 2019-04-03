@@ -17,8 +17,21 @@
     }
   }
 
+  .c-sidenav {
+    position: static;
+    transition: none;
+
+    &:not(.c-sidenav-fixed) .c-sidenav-body {
+      position: static;
+      overflow: visible;
+      width: auto;
+    }
+  }
+
   .c-sidenav-main {
     width: $sidebar-folded-default-width;
+    overflow: visible;
+    left: 0;
 
     .c-sidenav-body::-webkit-scrollbar {
       width: 0 !important;
