@@ -2,20 +2,6 @@
 // Sidebars Desktop ----------------------------
 // --------------------------------------------
 
-// Toggle min sidebar class
-$('.c-sidenav-main-toggle').on('click', function (e) {
-  e.preventDefault();
-
-  $('body').toggleClass('c-sidenav-folded').removeClass('c-sidenav-mobile-main');
-});
-
-
-// Toggle main sidebar
-$(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
-    e.preventDefault();
-    $('body').toggleClass('c-sidenav-main-hidden');
-});
-
 
 // Toggle hidden sidebar class
 $('.c-layout-fixed-toggle').on('click', function (e) {
@@ -23,28 +9,6 @@ $('.c-layout-fixed-toggle').on('click', function (e) {
 
   $('body').toggleClass('c-layout-fixed');
 });
-
-
-
-// Toggle User in sidebar
-$(document).on('click', '.c-sidenav-user-toggle', function (e) {
-    e.preventDefault();
-    $('body').toggleClass('c-sidenav-user-hidden');
-});
-
-
-// Toggle Dark sidebar
-$(document).on('click', '.c-sidenav-dark-toggle', function (e) {
-  e.preventDefault();
-  $('.c-sidenav-main').toggleClass('c-sidenav-dark');
-});
-
-// Hide sidebar
-$(document).on('click', '.c-sidenav-hidden-toggle', function (e) {
-  e.preventDefault();
-  $('.c-sidenav-main').toggleClass('c-sidenav-hidden');
-});
-
 
 
 // Toggle secondary sidebar
@@ -125,6 +89,73 @@ $(document).on('click', '.c-sidenav-component-toggle', function (e) {
 });
 
 
+// Hide sidebar
+$('#sidenavHideToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('#sidenavMain').toggleClass('c-sidenav-hidden');
+});
+
+// Fold main sidebar
+$('#sidenavFoldToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('#sidenavMain').toggleClass('c-sidenav-folded');
+});
+
+
+// Fold main sidebar
+$('#sidenavMainFoldToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('#sidenavMain').toggleClass('c-sidenav-folded');
+});
+
+
+// Toggle hidden sidebar class
+$('#fixedFoldToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('body').addClass('c-layout-fixed c-layout-fixed-folded');
+  $('#sidenavMain').addClass('c-sidenav-folded');
+});
+
+
+
+
+
+// Toggle right action-panel
+$('#actionPanelRightToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('#actionPanelRight').toggleClass('c-action-panel-visible');
+});
+
+
+// Toggle right action-panel
+$('#actionPanelLeftToggle').on('click', function (e) {
+  e.preventDefault();
+
+  $('#actionPanelLeft').toggleClass('c-action-panel-visible');
+});
+
+
+
+// Toggle User in sidebar
+$('#sidenavUserToggle').on('click', function (e) {
+  e.preventDefault();
+  $('body').toggleClass('c-sidenav-user-hidden');
+});
+
+
+// Toggle Dark sidebar
+$('#sidenavDarkToggle').on('click', function (e) {
+  e.preventDefault();
+$('.c-sidenav').toggleClass('c-sidenav-dark');
+});
+
+
+
 
 // --------------------------------------------
 // Sidebars Mobile ----------------------------
@@ -171,7 +202,7 @@ $('.c-sidenav-mobile-secondary-toggle').on('click', function (e) {
 // Toggle right sidebar on mobile
 $('.c-sidenav-mobile-right-toggle').on('click', function (e) {
     e.preventDefault();
-    $('body').toggleClass('c-sidenav-mobile-right').removeClass('c-sidenav-mobile-main c-sidenav-mobile-secondary');
+    $('body').toggleClass('c-sidenav-mobile-right c-action-panel-visible').removeClass('c-sidenav-mobile-main c-sidenav-mobile-secondary');
 
     // Hide sidebar if in fullscreen mode on mobile
     if($('.c-sidenav-right').hasClass('c-sidenav-fullscreen')) {

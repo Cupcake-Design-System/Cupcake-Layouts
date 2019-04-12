@@ -1,95 +1,14 @@
-@import 'mobile';
+// @import 'mobile';
+@import "mixins";
 @import 'core';
-@import 'extra';
-@import 'menu';
 @import 'user';
-@import 'folded';
-
-
-@media (min-width: 768px) {
-  .c-sidenav {
-    .c-sidenav-mobile-toggler {
-      display: none;
-    }
-
-
-    // &:not(.c-sidenav-component) {
-    //   position: static;
-    //   transition: none;
-
-    //   &:not(.c-sidenav-fixed) .c-sidenav-body {
-    //     position: static;
-    //     overflow: visible;
-    //     width: auto;
-    //   }
-    // }
-  }
-
-  .c-sidenav-main-hidden .c-sidenav.c-sidenav-main {
-    display: none;
-  }
-
-  .c-sidenav-component-hidden .c-sidenav.c-sidenav-component {
-    display: none;
-  }
-
-  .c-sidenav-secondary-hidden .c-sidenav.c-sidenav-secondary {
-    display: none;
-  }
-
-  .c-sidenav-mobile-right .c-sidenav.c-sidenav-right {
-    display: none;
-  }
-
-  .c-sidenav-right-visible .c-sidenav.c-sidenav-right {
-    display: block;
-  }
-}
 
 
 @media (max-width: 768px) {
   .c-sidenav {
-    .c-sidenav-mobile-toggler {
-      display: flex;
-    }
-
-
-    &:not(.c-sidenav-component) {
-      position: fixed;
-      transition: none;
-      left: -($sidebar-default-width + 2);
-    }
-  }
-
-  .c-sidenav-mobile-main .c-sidenav-main {
-    left: 0;
     position: fixed;
-
-    .c-sidenav-body {
-      left: 0;
-      position: fixed;
-    }
-  }
-
-  .c-sidenav-mobile-secondary .c-sidenav-secondary {
-    left: 0;
-
-    .c-sidenav-body {
-      left: 0;
-    }
-  }
-
-  .c-sidenav-mobile-right .c-sidenav-right {
-    right: 0;
-    left: auto;
-
-    .c-sidenav-body {
-      right: 0;
-      left: auto;
-    }
+    transition: none;
+    left: -($sidebar-default-width + 2);
   }
 }
 
-.c-sidenav-body::-webkit-scrollbar {
-  width: 0 !important;
-}

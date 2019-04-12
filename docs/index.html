@@ -40,23 +40,7 @@
 	
 	
 	
-	    <div class="mobile">
-	      <div class="c-header-item">
-	        <a href="#" class="c-header-item-link c-sidenav-mobile-main-toggle">
-	          <i class="fas fa-bars"></i>
-	        </a>
-	      </div>
-	      <div class="c-header-item">
-	        <a href="#" class="c-header-item-link c-sidenav-mobile-secondary-toggle">
-	          <i class="fas fa-arrow-right"></i>
-	        </a>
-	      </div>
-	      <div class="c-header-item">
-	        <a href="#" class="c-header-item-link c-sidenav-mobile-right-toggle">
-	          <i class="fas fa-arrow-left"></i>
-	        </a>
-	      </div>
-	    </div>
+	
 	
 	  </div>
 	
@@ -65,7 +49,7 @@
 	  <div class="c-header-right">
 	    <div class="c-header-item">
 	      <a class="c-header-item-link" href="#">
-	        <span class="c-avatar c-avatar-sm c-avatar-secondary" data-text="AB">
+	        <span class="c-avatar c-avatar-secondary" data-text="AB">
 	        </span>
 	        <i class="fa fa-caret-down" aria-hidden="true"></i>
 	      </a>
@@ -75,20 +59,7 @@
 	</header>
 	<div class="page-content">
 
-			<div class="c-sidenav c-sidenav-main ">
-			
-			  <!-- Sidebar mobile toggler -->
-			  <div class="c-sidenav-mobile-toggler">
-			    <a href="#" class="c-sidenav-mobile-main-toggle">
-			      <i class="far fa-arrow-to-left"></i>
-			    </a>
-			    Navigation
-			    <a href="#" class="c-sidenav-mobile-expand">
-			      <i class="far fa-expand-wide"></i>
-			      <i class="far fa-expand-alt"></i>
-			    </a>
-			  </div>
-			  <!-- /sidebar mobile toggler -->
+			<div id="sidenavMain" class="c-sidenav ">
 			
 			  <div class="c-sidenav-user">
 			    <div class="c-sidenav-user-body">
@@ -158,32 +129,6 @@
 			
 			
 			      </li>
-			      <li class="c-sidenav-menu-item c-sidenav-menu-submenu ">
-			        <a href="" class="c-sidenav-menu-link ">
-			          <i class="far fa-window-restore"></i> <span>Content Sidebars</span>
-			        </a>
-			
-			        <ul class="c-sidenav-menu-submenu-group" data-submenu-title="Content Sidebars">
-			          <li class="c-sidenav-menu-item">
-			            <a href="internal-left.html" class="c-sidenav-menu-link ">Internal Left</a>
-			
-			
-			          </li>
-			          <li class="c-sidenav-menu-item">
-			            <a href="internal-right.html" class="c-sidenav-menu-link ">Internal Right</a>
-			
-			
-			          </li>
-			        </ul>
-			
-			      </li>
-			      <li class="c-sidenav-menu-item ">
-			        <a href="quickview.html" class="c-sidenav-menu-link ">
-			          <i class="fas fa-eye"></i> <span>Quickview</span>
-			        </a>
-			
-			
-			      </li>
 			      <li class="c-sidenav-menu-item ">
 			        <a href="page-headers.html" class="c-sidenav-menu-link ">
 			          <i class="fas fa-box-up"></i> <span>Page Headers</span>
@@ -227,102 +172,27 @@
 			    </ul>
 			  </div>
 			
-			  <div class="c-sidenav-collapse c-sidenav-main-toggle">
+			  <div id="sidenavMainFoldToggle" class="c-sidenav-collapse">
 			    <i class="fa fa-angle-left"></i>
 			  </div>
 			</div>
 
-			<!-- Secondary sidebar -->
-			<div class="c-sidenav c-sidenav-secondary c-bg-gray-0">
+			<div id="actionPanelLeft" class="c-action-panel c-action-panel-push c-action-panel-left">
 			
-			  <!-- Sidebar mobile toggler -->
-			  <div class="c-sidenav-mobile-toggler c-text-center">
-			    <a href="#" class="c-sidenav-mobile-secondary-toggle">
-			      <i class="far fa-arrow-to-left"></i>
-			    </a>
-			    <span class="font-weight-semibold">Secondary sidebar</span>
-			    <a href="#" class="c-sidenav-mobile-expand">
-			      <i class="far fa-expand-wide"></i>
-			      <i class="far fa-expand-alt"></i>
-			    </a>
-			  </div>
-			  <!-- /sidebar mobile toggler -->
-			
-			  <!-- Sidebar content -->
-			  <div class="c-sidenav-body">
-			
-			    <div class="c-media-list c-media-list-hover c-p-top-md">
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-envelope c-text-primary-7" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Inbox</div>
-			        </div>
-			        <span class="c-badge c-badge-primary c-badge-rounded">6</span>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-clock c-text-warning-7" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Snoozed</div>
-			        </div>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fa fa-check c-text-success-7" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Done</div>
-			        </div>
-			        <span class="c-badge c-badge-success c-badge-rounded">10</span>
-			      </div>
-			
+			  <header class="c-action-panel-header">
+			    <div class="c-action-panel-header-title">
+			      Simple Header
 			    </div>
-			
-			    <hr class="c-hr">
-			
-			    <div class="c-media-list c-media-list-hover">
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-envelope-open c-text-gray-6" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Drafts</div>
-			        </div>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-paper-plane c-text-gray-6" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Sent</div>
-			        </div>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-bell c-text-gray-6" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Reminders</div>
-			        </div>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-trash c-text-gray-6" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Trash</div>
-			        </div>
-			      </div>
-			
-			      <div class="c-media c-media-middle">
-			        <i class="fal fa-user c-text-gray-6" aria-hidden="true"></i>
-			        <div class="c-media-body">
-			          <div class="c-text-md">Contacts</div>
-			        </div>
-			      </div>
+			    <div class="c-action-panel-header-menu">
+			      <a class="c-action-panel-close"></a>
 			    </div>
-			    <hr class="c-hr">
+			  </header>
+			
+			  <div class="c-action-panel-body">
 			
 			  </div>
-			  <!-- /sidebar content -->
 			
 			</div>
-			<!-- /secondary sidebar -->
 
 
 		<div class="content-wrapper">
@@ -432,65 +302,75 @@
 		</div>
 
 			<!-- Right sidebar -->
-			<div class="c-sidenav c-sidenav-right">
+			<div id="actionPanelRight" class="c-action-panel c-notifications c-action-panel-push">
 			
-			  <!-- Sidebar mobile toggler -->
-			  <div class="c-sidenav-mobile-toggler c-text-center">
-			    <a href="#" class="c-sidenav-mobile-expand">
-			      <i class="far fa-expand-wide"></i>
-			      <i class="far fa-expand-alt"></i>
-			    </a>
-			    <span class="font-weight-semibold">Right sidebar</span>
-			    <a href="#" class="c-sidenav-mobile-right-toggle">
-			      <i class="far fa-arrow-to-right"></i>
-			    </a>
-			  </div>
-			  <!-- /sidebar mobile toggler -->
+			  <header class="c-action-panel-header">
+			    <div class="c-action-panel-header-title">
+			      Action Panel Title
+			    </div>
+			    <div class="c-action-panel-header-subtitle">
+			      Action Panel Subtitle
+			    </div>
+			    <div class="c-action-panel-header-menu">
+			      <a class="c-action-panel-header-menu-icon" href="#">
+			        <i class="fa fa-expand" aria-hidden="true"></i>
+			      </a>
+			      <a class="c-action-panel-header-menu-icon" href="#">
+			        <i class="fa fa-cog" aria-hidden="true"></i>
+			      </a>
+			    </div>
+			  </header>
 			
-			  <!-- Sidebar content -->
-			  <div class="c-sidenav-body">
+			    <div class="c-action-panel-body">
+			      <div class="c-media-list c-media-list-hover">
 			
-			    <ul class="c-sidenav-menu" data-nav-type="accordion">
-			      <li class="c-sidenav-menu-category">Category title</li>
-			      <li class="c-sidenav-menu-item">
-			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-university"></i> Link</a>
-			      </li>
-			      <li class="c-sidenav-menu-item">
-			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-hospital"></i> Another link</a>
-			      </li>
-			      <li class="c-sidenav-menu-item">
-			        <a href="#" class="c-sidenav-menu-link">
-			          <i class="fas fa-user-astronaut"></i>
-			          Link with badge
-			          <span class="badge bg-primary badge-pill ml-auto">2</span>
-			        </a>
-			      </li>
-			      <li class="c-sidenav-divider"></li>
-			      <li class="c-sidenav-menu-item c-sidenav-menu-submenu">
-			        <a href="#" class="c-sidenav-menu-link"><i class="fas fa-layer-group"></i> Menu levels</a>
-			        <ul class="c-sidenav-menu-submenu-group" style="display: none;">
-			          <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-			          <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
-			            <a href="#" class="c-sidenav-menu-link">Second level with child</a>
-			            <ul class="c-sidenav-menu-submenu-group" style="display: block;">
-			              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-			              <li class="c-sidenav-menu-item c-sidenav-menu-submenu c-sidenav-menu-item-open">
-			                <a href="#" class="c-sidenav-menu-link">Third level with child</a>
-			                <ul class="c-sidenav-menu-submenu-group" style="display: block;">
-			                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-			                  <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Fourth level</a></li>
-			                </ul>
-			              </li>
-			              <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Third level</a></li>
-			            </ul>
-			          </li>
-			          <li class="c-sidenav-menu-item"><a href="#" class="c-sidenav-menu-link">Second level</a></li>
-			        </ul>
-			      </li>
-			    </ul>
+			        <div class="c-media c-media-middle">
+			          <div class="c-avatar c-avatar-lg c-avatar-cyan">
+			            <i class="fab fa-dropbox"></i>
+			          </div>
+			          <div class="c-media-body">
+			            <div class="c-text-md">Notification Content</div>
+			            <div class="c-text-sm c-text-bold">Name/App</div>
+			          </div>
+			        </div>
 			
-			  </div>
-			  <!-- /sidebar content -->
+			        <div class="c-media c-media-middle">
+			          <div class="c-avatar c-avatar-lg c-avatar-lime">
+			            <i class="fab fa-apple"></i>
+			          </div>
+			          <div class="c-media-body">
+			            <div class="c-text-md">Notification Content</div>
+			            <div class="c-text-sm c-text-bold">Name/App</div>
+			          </div>
+			        </div>
+			
+			        <div class="c-media c-media-middle c-media-read">
+			          <div class="c-avatar c-avatar-lg c-avatar-orange">
+			            <i class="fab fa-amazon"></i>
+			          </div>
+			          <div class="c-media-body">
+			            <div class="c-text-md">This Notification is read</div>
+			            <div class="c-text-sm c-text-bold">Name/App</div>
+			          </div>
+			        </div>
+			
+			        <div class="c-media c-media-middle">
+			          <div class="c-avatar c-avatar-lg c-avatar-grape">
+			            <i class="fab fa-xbox"></i>
+			          </div>
+			          <div class="c-media-body">
+			            <div class="c-text-md">Notification Content</div>
+			            <div class="c-text-sm c-text-bold">Name/App</div>
+			          </div>
+			        </div>
+			
+			      </div>
+			    </div>
+			
+			    <footer class="c-action-panel-footer">
+			      <button class="c-btn c-btn-primary c-m-right-sm">Submit</button>
+			      <button class="c-btn c-btn-secondary">Cancel</button>
+			    </footer>
 			
 			</div>
 			<!-- /right sidebar -->
@@ -510,23 +390,57 @@
         <div class="c-media-list">
           <div class="c-media c-media-middle c-media-action-visible">
             <div class="c-media-body">
-              <div class="c-text-md c-text-bold">Fold Sidebar</div>
-              <div class="c-text-sm c-text-muted c-p-top-xs">Only display icons in the sidebar</div>
+              <div class="c-text-md c-text-bold">Hide Sidebar</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Hide the sidebar completely</div>
             </div>
-            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-main-toggle">
+            <button id="sidenavHideToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
               <span class="fas fa-check"></span>
             </button>
           </div>
     
           <div class="c-media c-media-middle c-media-action-visible">
             <div class="c-media-body">
-              <div class="c-text-md c-text-bold">Toggle Sidebar</div>
-              <div class="c-text-sm c-text-muted c-p-top-xs">Hide the sidebar completely</div>
+              <div class="c-text-md c-text-bold">Fold Sidebar</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Only display icons in the sidebar</div>
             </div>
-            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-hidden-toggle">
+            <button id="sidenavFoldToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
               <span class="fas fa-check"></span>
             </button>
           </div>
+    
+    
+          <div class="c-media c-media-middle c-media-action-visible">
+            <div class="c-media-body">
+              <div class="c-text-md c-text-bold">Fixed and Folded Sidebar</div>
+              <div class="c-text-sm c-text-muted c-p-top-xs">Only display icons in the sidebar</div>
+            </div>
+            <button id="fixedFoldToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
+              <span class="fas fa-check"></span>
+            </button>
+          </div>
+    
+    
+            <div class="c-media c-media-middle c-media-action-visible">
+              <div class="c-media-body">
+                <div class="c-text-md c-text-bold">Toggle Right Action Panel</div>
+                <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary right sidebar</div>
+              </div>
+              <button id="actionPanelRightToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
+                <span class="fas fa-check"></span>
+              </button>
+            </div>
+    
+    
+            <div class="c-media c-media-middle c-media-action-visible">
+              <div class="c-media-body">
+                <div class="c-text-md c-text-bold">Toggle Left Action Panel</div>
+                <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary right sidebar</div>
+              </div>
+              <button id="actionPanelLeftToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
+                <span class="fas fa-check"></span>
+              </button>
+            </div>
+    
     
           <div class="c-media c-media-middle c-media-action-visible">
             <div class="c-media-body">
@@ -543,7 +457,7 @@
               <div class="c-text-md c-text-bold">Toggle User</div>
               <div class="c-text-sm c-text-muted c-p-top-xs">Remove the user section from the sidebar</div>
             </div>
-            <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-user-toggle">
+            <button id="sidenavUserToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
               <span class="fas fa-user"></span>
             </button>
           </div>
@@ -553,7 +467,7 @@
                 <div class="c-text-md c-text-bold">Toggle Dark Nav</div>
                 <div class="c-text-sm c-text-muted c-p-top-xs">WIP: Dark Side-Nav</div>
               </div>
-              <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-dark-toggle">
+              <button id="sidenavDarkToggle" class="c-btn c-btn-circle c-btn-sm c-btn-primary">
                 <span class="fas fa-user"></span>
               </button>
             </div>
@@ -562,32 +476,7 @@
     
         </div>
     
-        <header class="c-quickview-header">
-            <div class="c-text-lg c-text-bold c-quickview-title">Secondary Sidebar Options</div>
-          </header>
-          <div class="c-media-list">
-              <div class="c-media c-media-middle c-media-action-visible">
-                <div class="c-media-body">
-                  <div class="c-text-md c-text-bold">Toggle Left Sidebar</div>
-                  <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary left sidebar</div>
-                </div>
-                <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-secondary-toggle">
-                  <span class="fas fa-check"></span>
-                </button>
-              </div>
     
-              <div class="c-media c-media-middle c-media-action-visible">
-                  <div class="c-media-body">
-                    <div class="c-text-md c-text-bold">Toggle Right Sidebar</div>
-                    <div class="c-text-sm c-text-muted c-p-top-xs">Full height secondary right sidebar</div>
-                  </div>
-                  <button class="c-btn c-btn-circle c-btn-sm c-btn-primary c-sidenav-right-toggle">
-                    <span class="fas fa-check"></span>
-                  </button>
-                </div>
-    
-    
-            </div>
       </div>
     
     </div>

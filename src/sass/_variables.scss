@@ -56,9 +56,26 @@ $sidebar-category-color             : $color-gray-6 !default;
 $sidebar-submenu-bg                 : $color-white !default;
 $sidebar-submenu-link-active-color  : $sidebar-default-active-color !default;
 $sidebar-submenu-link-padding-left  : 48px !default;
-$sidebar-submenu-link-line-height   : 32px !default;
+
 $sidebar-submenu-level3-padding-left: 64px !default;
 $sidebar-submenu-level4-padding-left: 80px !default;
+
+
+$dark-bg: #0b3a56 !default;
+$dark-foreground: $color-white !default;
+// Dark sidebar
+$sidebar-dark-bg:                        $dark-bg !default;
+$sidebar-dark-color:                     $dark-foreground !default;
+$sidebar-dark-border-color:              rgba($color-white, 0.1) !default;
+// Dark sidebar navigation styles
+$navigation-dark-color:                     rgba($dark-foreground, 0.9) !default;
+$navigation-dark-hover-bg:                  rgba($color-black, 0.15) !default;
+$navigation-dark-hover-color:               $dark-foreground !default;
+$navigation-dark-active-bg:                 #1c7cd6 !default;
+$navigation-dark-active-color:              $color-white !default;
+$navigation-dark-sub-bg:                    rgba($color-black, 0.15) !default;
+$navigation-dark-sub-active-bg:             rgba($color-black, 0.15) !default;
+$navigation-dark-sub-active-color:          $color-white !default;
 // --------------------------------------------
 // Sidebar End --------------------------------
 // --------------------------------------------
@@ -119,3 +136,36 @@ $backdrop-bg-dark                   : rgba(0, 0, 0, 0.5) !default;
 // --------------------------------------------
 // Quickview End ------------------------------
 // --------------------------------------------
+
+
+$action-panel-padding-v              : $space-md - $space-xs !default;
+$action-panel-padding-h              : $space-md !default;
+$action-panel-header-font-size       : $font-body-lg !default;
+$action-panel-header-font-weight     : $font-weight-bold !default;
+$action-panel-header-line-height     : 24px !default;
+$action-panel-header-color           : $color-gray-9 !default;
+$action-panel-header-icon-color      : $color-gray-5 !default;
+$action-panel-header-icon-hover-color: lighten($action-panel-header-icon-color, 10%) !default;
+$action-panel-title-font-size        : $font-body-xl !default;
+$action-panel-title-font-weight      : $font-weight-bold !default;
+$action-panel-subtitle-line-height   : $font-body-md !default;
+$action-panel-subtitle-font-size     : $font-body-md !default;
+$action-panel-header-bg              : $color-white !default;
+$action-panel-footer-bg              : $color-white !default;
+$action-panel-footer-color           : $color-primary-8 !default;
+$action-panel-footer-hover-color     : $color-primary-6 !default;
+$action-panel-footer-font-size       : $font-body-md !default;
+$action-panel-footer-line-weight     : $font-body-xl !default;
+$action-panel-border                 : 1px solid $color-gray-2 !default;
+$action-panel-zindex                 : 999 !default;
+$action-panel-width-sm               : 220px !default;
+$action-panel-width                  : 320px !default;
+$action-panel-width-lg               : 400px !default;
+$action-panel-bg                     : $color-gray-0 !default;
+$action-panel-transition             : 0.3s ease !default;
+$action-panel-shadow                 : $shadow-lg !default;
+$action-panel-backdrop               : rgba(0, 0, 0, 0.75) !default;
+
+$action-panel-sizes: (
+  lg: 400px
+) !default;

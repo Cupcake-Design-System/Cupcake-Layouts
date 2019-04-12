@@ -1,0 +1,99 @@
+@mixin base-sidenav {
+  top: 0;
+  bottom: 0;
+  z-index: 1040;
+  flex: 0 0 auto;
+  transition: none;
+  font-weight: 500;
+  box-sizing: content-box;
+  background-clip: content-box;
+  width: $sidebar-default-width;
+  color: $sidebar-default-color;
+  border-right: $sidebar-default-border;
+  font-size: $sidebar-default-font-size;
+  background-color: $sidebar-default-bg-color;
+}
+
+@mixin sidenav-body {
+  bottom: 0;
+  flex: 1 1 0%;
+  width: inherit;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: $header-height;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  transition: left ease-in-out 0.15s, right ease-in-out 0.15s;
+}
+
+@mixin sidenav-collapse {
+  bottom: 0;
+  height: 40px;
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  color: #868e96;
+  padding: 10px 20px;
+  align-items: center;
+  background: #f8f9fa;
+  justify-content: flex-end;
+  width: $sidebar-default-width;
+  border-top: 1px solid #e9ecef;
+
+  &:hover {
+    background-color: #f1f3f5;
+  }
+}
+
+
+@mixin sidenav-menu {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  flex-direction: column;
+}
+
+
+@mixin sidenav-menu-link {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-radius: $radius-sm;
+  color: $sidebar-link-color;
+  margin: $sidebar-link-margin;
+  padding: $sidebar-link-padding;
+  line-height: $sidebar-link-line-height;
+  transition: background-color ease-in-out 0.15s, color ease-in-out 0.15s;
+
+  i {
+    margin: $sidebar-link-icon-margin;
+    font-size: $sidebar-link-icon-font-size;
+    color: $sidebar-link-icon-color;
+  }
+
+  &:hover {
+    color: $sidebar-link-hover-color;
+    background-color: $sidebar-link-hover-bg;
+
+    i {
+      color: $sidebar-link-icon-color-active;
+    }
+  }
+
+  &-active {
+    background-color: $sidebar-link-active-bg;
+    color: $sidebar-link-active-color;
+
+    i {
+      color: $sidebar-link-icon-color-active;
+    }
+
+    // &:hover {
+    //   color: #263238;
+    //   background-color: darken(#f8f9fa, 5);
+    // }
+  }
+}

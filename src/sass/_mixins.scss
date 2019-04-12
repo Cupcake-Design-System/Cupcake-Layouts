@@ -1,46 +1,4 @@
-@mixin box-shadow($shadow...) {
-  box-shadow: $shadow;
-}
-
-@mixin clearfix() {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-}
 
 @mixin hover {
   &:hover { @content; }
-}
-
-@mixin hover-focus {
-  &:hover,
-  &:focus {
-    @content;
-  }
-}
-
-@mixin plain-hover-focus {
-  &,
-  &:hover,
-  &:focus {
-    @content;
-  }
-}
-
-@mixin hover-focus-active {
-  &:hover,
-  &:focus,
-  &:active {
-    @content;
-  }
-}
-
-
-@mixin nav-divider($color: black, $margin-y: 16px) {
-  height: 0;
-  margin: $margin-y 0;
-  overflow: hidden;
-  border-top: 1px solid $color;
 }

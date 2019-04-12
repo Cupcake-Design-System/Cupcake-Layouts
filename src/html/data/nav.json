@@ -12,28 +12,6 @@
      "icon": "far fa-browser"
   },
   {
-     "title": "Content Sidebars",
-     "icon": "far fa-window-restore",
-     "submenu": [
-        {
-           "text": "Internal Left",
-           "page": "internal-left",
-           "url": "internal-left.html"
-        },
-        {
-           "text": "Internal Right",
-           "page": "internal-right",
-           "url": "internal-right.html"
-        }
-     ]
-  },
-  {
-     "title": "Quickview",
-     "page": "quickview",
-     "url": "quickview.html",
-     "icon": "fas fa-eye"
-  },
-  {
      "title": "Page Headers",
      "page": "page-headers",
      "url": "page-headers.html",

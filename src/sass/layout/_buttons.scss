@@ -45,13 +45,14 @@ $zindex-fab:                9 !default;
     position: relative;
     z-index: 1;
   }
+
+  &-fixed {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+  }
 }
 
-.fab-fixed {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-}
 
 .fab-buttons {
   position: absolute;

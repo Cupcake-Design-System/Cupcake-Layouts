@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "surge": "surge --project ./docs cupcake-layouts.surge.sh",
     "start": "gulp",
     "get-tokens": "copyfiles -f node_modules/@cupcake-ds/cupcake-sprinkles/dist/_tokens.scss src/sass"
   },
